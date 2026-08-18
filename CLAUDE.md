@@ -122,11 +122,10 @@ unplayable position.
    markers, walls, seals, traps, monster stacks, the equipment bag, the Beast dial, ballistae.
 5. **Invasions** place a monster on a workshop tile and block that tile's action until it is cleared.
    Only "Wall Crawler" has a failure penalty, on purpose.
-6. Asking for a quest **ends the hero's turn** and may be done from anywhere on the board (Adam
-   relaxed the original castle-tile-only rule in Aug 2026 — it made the tavern too hard to use).
-   Rewards are still claimed only when the hero is **back on the castle tile**. Together these are
-   the counterweight that keeps quest acquisition costly; without them the surplus-turn soak
-   disappears. Do not make asking a free action.
+6. Asking for a quest **ends the hero's turn** and may be done from anywhere on the board. Rewards
+   are claimed **at the end of the hero's turn, on any tile without a monster**. (Adam relaxed both
+   original castle-tile-only rules in Aug 2026 — they made the tavern too hard to use.) The
+   turn-ending ask is now the sole cost counterweight on quests; do not make asking a free action.
 
 ## Verified game facts (checked against the rulebooks, not from memory)
 
