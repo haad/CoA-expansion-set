@@ -1,0 +1,845 @@
+{
+  "sky": [
+    {
+      "tier": "boon",
+      "name": "Queen's Purse",
+      "text": "Every hero takes 1 coin from the supply."
+    },
+    {
+      "tier": "boon",
+      "name": "Feast at the Castle",
+      "text": "Every hero heals 2 toughness markers."
+    },
+    {
+      "tier": "boon",
+      "name": "Lucky Stars",
+      "text": "Every hero rolls one green die. On an attack, take 2 coins. On a blank, heal 1 toughness."
+    },
+    {
+      "tier": "boon",
+      "name": "Gaol Break",
+      "text": "Every hero in the dungeon walks free at once, no fee."
+    },
+    {
+      "tier": "boon",
+      "name": "Muster of Avel",
+      "text": "Every hero rolls one green die and takes 2 coins for each attack symbol."
+    },
+    {
+      "tier": "boon",
+      "name": "Moonlit Dew",
+      "text": "Every hero heals 1 toughness marker."
+    },
+    {
+      "tier": "boon",
+      "name": "Forge Sparks",
+      "text": "Upgrade one item, on any hero, for free."
+    },
+    {
+      "tier": "boon",
+      "name": "Spirit's Gift",
+      "text": "Draw one equipment token from the bag and give it to any hero."
+    },
+    {
+      "tier": "boon",
+      "name": "Sharpened Blades",
+      "text": "This round every hero rolls one extra green die in their first battle."
+    },
+    {
+      "tier": "boon",
+      "name": "Second Breath",
+      "text": "One hero of your choice takes a third action this round."
+    },
+    {
+      "tier": "boon",
+      "name": "Dwarven Discount",
+      "text": "This round the first wall or moon seal costs 1 coin instead of 3."
+    },
+    {
+      "tier": "boon",
+      "name": "Old Map",
+      "text": "Reveal one face-down tile of your choice now. If it has a lair, place a monster as usual."
+    },
+    {
+      "tier": "boon",
+      "name": "Quiet Woods",
+      "text": "This round resting restores 3 toughness markers instead of 2."
+    },
+    {
+      "tier": "boon",
+      "name": "Jewel Flare",
+      "text": "Put 1 damage marker on any one monster on the board."
+    },
+    {
+      "tier": "neutral",
+      "name": "The Watch Patrol",
+      "text": "Every hero rolls one green die. Any hero who rolls no attack symbol is dragged to the castle dungeon: move their pawn to the castle. They take no actions until another hero pays 2 coins to the supply."
+    },
+    {
+      "tier": "neutral",
+      "name": "Contest of Arms",
+      "text": "Every hero rolls 2 green dice. Whoever rolls the most attacks upgrades one item. Ties share the prize."
+    },
+    {
+      "tier": "neutral",
+      "name": "Foot Race",
+      "text": "Every hero rolls one green die. Each hero with an attack symbol may move one tile at once, for free."
+    },
+    {
+      "tier": "neutral",
+      "name": "Tithe",
+      "text": "Every hero gives up 1 coin or 1 item, their own choice."
+    },
+    {
+      "tier": "neutral",
+      "name": "Trade Winds",
+      "text": "Each hero may swap one backpack item with any other hero, no matter where they stand."
+    },
+    {
+      "tier": "neutral",
+      "name": "Wandering Merchant",
+      "text": "A pedlar walks the roads. This round any hero may buy an item for 3 coins wherever they stand: pay and draw from the bag."
+    },
+    {
+      "tier": "neutral",
+      "name": "Fog on the Hills",
+      "text": "No shortcuts this round."
+    },
+    {
+      "tier": "neutral",
+      "name": "Wandering Spirit",
+      "text": "Roll 2 green dice. Two attacks: take 4 coins. One: take 2 coins. None: one hero loses 1 toughness."
+    },
+    {
+      "tier": "neutral",
+      "name": "Bargain",
+      "text": "One hero may put an item back in the bag and draw a new one."
+    },
+    {
+      "tier": "neutral",
+      "name": "Restless Beasts",
+      "text": "Move one small monster one tile in any direction."
+    },
+    {
+      "tier": "mild",
+      "name": "Tax Day",
+      "text": "Every hero who has a coin pays 1 coin to the supply. Anyone who cannot pay loses 1 toughness."
+    },
+    {
+      "tier": "mild",
+      "name": "Sprite Plague",
+      "text": "Every hero loses 1 toughness unless they pay 1 coin to the supply."
+    },
+    {
+      "tier": "mild",
+      "name": "Press Gang",
+      "text": "Every hero rolls one green die. Every hero who rolls no attack is thrown in the dungeon and stays there until another hero pays 2 coins."
+    },
+    {
+      "tier": "mild",
+      "name": "Empty Larders",
+      "text": "No hero may rest this round. Heroes on the castle tile may still rest."
+    },
+    {
+      "tier": "mild",
+      "name": "Rockslide",
+      "text": "The quarry is closed this round."
+    },
+    {
+      "tier": "mild",
+      "name": "Sour Elixirs",
+      "text": "No elixirs may be drunk this round."
+    },
+    {
+      "tier": "mild",
+      "name": "Monster Cunning",
+      "text": "This round every monster rolls one extra purple die, if one is free."
+    },
+    {
+      "tier": "mild",
+      "name": "Rusted Gear",
+      "text": "Each hero puts a used-equipment marker on one item of their choice. It cannot be used this round."
+    },
+    {
+      "tier": "mild",
+      "name": "Slow Morning",
+      "text": "The starting player takes only 1 action this round."
+    },
+    {
+      "tier": "mild",
+      "name": "Creeping Dark",
+      "text": "Place one small monster on a face-up lair tile of the players' choice."
+    },
+    {
+      "tier": "mild",
+      "name": "Stolen Supplies",
+      "text": "Put one item from any backpack back in the bag. The players choose which."
+    },
+    {
+      "tier": "mild",
+      "name": "Wounded Pride",
+      "text": "Every hero at full toughness loses 1 marker. Wounded heroes are spared."
+    },
+    {
+      "tier": "mild",
+      "name": "Shuttered Workshop",
+      "text": "The alchemist workshop is closed this round."
+    },
+    {
+      "tier": "mild",
+      "name": "Empty Stalls",
+      "text": "The marketplace is closed this round."
+    },
+    {
+      "tier": "harsh",
+      "name": "Curfew of the Black Moon",
+      "text": "Every hero who ends this round on a tile with a monster loses 2 toughness."
+    },
+    {
+      "tier": "harsh",
+      "name": "Highwaymen",
+      "text": "Every hero rolls one green die. Every hero with no attack symbol loses 2 coins, or an item if they have no coins."
+    },
+    {
+      "tier": "harsh",
+      "name": "Moon Shard",
+      "text": "Place one small monster on the tile nearest the castle that has no monster on it."
+    },
+    {
+      "tier": "harsh",
+      "name": "Something Awakens",
+      "text": "Place one big monster on a face-up lair tile of the players' choice."
+    },
+    {
+      "tier": "harsh",
+      "name": "Dark Blessing",
+      "text": "Remove 1 damage marker from every wounded monster on the board."
+    },
+    {
+      "tier": "harsh",
+      "name": "Monster Fury",
+      "text": "This round every monster swaps one purple die for a black die."
+    },
+    {
+      "tier": "harsh",
+      "name": "Broken Wall",
+      "text": "Remove one built wall marker from the game. If there are none, every hero loses 1 coin."
+    },
+    {
+      "tier": "harsh",
+      "name": "The Beast Stirs",
+      "text": "If the Beast is on the board, turn its dial up by 2. If not, every hero loses 1 coin."
+    },
+    {
+      "tier": "harsh",
+      "name": "Sprung Trap",
+      "text": "Remove one placed trap from the game. If there are none, no hero may rest this round."
+    },
+    {
+      "tier": "harsh",
+      "name": "Thieves",
+      "text": "The team returns 3 coins to the supply. The players choose who pays."
+    },
+    {
+      "tier": "harsh",
+      "name": "Swarm",
+      "text": "Place a small monster on every empty face-up lair tile without a moon seal."
+    },
+    {
+      "tier": "boon",
+      "name": "Steady Aim",
+      "text": "Every ballista on the board fires twice this round.",
+      "toolkit": true
+    },
+    {
+      "tier": "boon",
+      "name": "Restocked Cart",
+      "text": "Put the 3 items on the flea market back in the bag and draw 3 new ones.",
+      "toolkit": true
+    },
+    {
+      "tier": "boon",
+      "name": "Loyal Beasts",
+      "text": "Flip every used animal companion token back to its first side. If none were used, every hero heals 1.",
+      "toolkit": true
+    },
+    {
+      "tier": "neutral",
+      "name": "Bargain Hunters",
+      "text": "This round a hero at the flea market may make two exchanges with one action.",
+      "toolkit": true
+    },
+    {
+      "tier": "mild",
+      "name": "Tangled Cords",
+      "text": "No ballista fires this round.",
+      "toolkit": true
+    },
+    {
+      "tier": "mild",
+      "name": "Worn Soles",
+      "text": "Shoes give nothing this round, upgraded or not.",
+      "toolkit": true
+    },
+    {
+      "tier": "mild",
+      "name": "Empty Cart",
+      "text": "Return one item from the flea market to the bag without replacing it.",
+      "toolkit": true
+    },
+    {
+      "tier": "harsh",
+      "name": "The Daughters Whisper",
+      "text": "Envy, Greed and Wrath are listening. Every hero takes 1 damage that cannot be blocked in any way.",
+      "toolkit": true
+    }
+  ],
+  "tavern": [
+    {
+      "name": "Wolf Bounty",
+      "task": "Defeat 2 small monsters.",
+      "reward": "4 coins"
+    },
+    {
+      "name": "The Big One",
+      "task": "Defeat a big monster.",
+      "reward": "Draw an item, then upgrade one item"
+    },
+    {
+      "name": "Marked Prey",
+      "task": "Point at any monster on the board now. Defeat that one.",
+      "reward": "3 coins and an item"
+    },
+    {
+      "name": "Cartographer",
+      "task": "Reveal 2 new tiles.",
+      "reward": "3 coins"
+    },
+    {
+      "name": "Deep Scout",
+      "task": "Be the hero furthest from the castle when a round ends.",
+      "reward": "Draw an item"
+    },
+    {
+      "name": "Stonework",
+      "task": "Build a wall at the quarry.",
+      "reward": "3 coins back"
+    },
+    {
+      "name": "Locksmith",
+      "task": "Seal a lair at the stone circles.",
+      "reward": "3 coins back"
+    },
+    {
+      "name": "Trapper",
+      "task": "Set a trap at the elven camp.",
+      "reward": "Upgrade one item"
+    },
+    {
+      "name": "Alchemy Lesson",
+      "task": "Upgrade an item at the alchemist workshop.",
+      "reward": "2 coins and heal 2"
+    },
+    {
+      "name": "Lake Offering",
+      "task": "Make an offering at the wishing lake.",
+      "reward": "2 coins, whatever the dice say"
+    },
+    {
+      "name": "Courier",
+      "task": "Come back to the castle from at least two tiles away carrying 4 or more coins. You keep them.",
+      "reward": "Draw an item"
+    },
+    {
+      "name": "Brave Heart",
+      "task": "Win a battle with 2 or fewer toughness markers left.",
+      "reward": "Heal to full and draw an item"
+    },
+    {
+      "name": "Clean Sweep",
+      "task": "End a round with no monster on any tile touching the castle.",
+      "reward": "4 coins"
+    },
+    {
+      "name": "Toolsmith",
+      "task": "Wear a weapon, a shield and a helmet at the same time.",
+      "reward": "Upgrade one of them"
+    },
+    {
+      "name": "Elixir Run",
+      "task": "Carry 2 elixirs in your backpack at once.",
+      "reward": "3 coins"
+    },
+    {
+      "name": "Trophy Hunt",
+      "task": "Defeat a monster without losing a single toughness marker.",
+      "reward": "Draw an item"
+    },
+    {
+      "name": "Salvage",
+      "task": "Sell an item at the marketplace.",
+      "reward": "Draw an item for free"
+    },
+    {
+      "name": "Nightwatch",
+      "task": "Spend a whole turn, both actions, on the castle tile.",
+      "reward": "Heal to full and take 2 coins"
+    },
+    {
+      "name": "Merchant's Favour",
+      "task": "Buy something at the marketplace.",
+      "reward": "2 coins back"
+    },
+    {
+      "name": "Pathfinder",
+      "task": "Travel by shortcut.",
+      "reward": "3 coins"
+    },
+    {
+      "name": "Empty Lair",
+      "task": "Stand on a lair tile with no monster on it when a round ends.",
+      "reward": "2 coins"
+    },
+    {
+      "name": "Gaoler's Errand",
+      "task": "Pay the fee to free a hero from the dungeon.",
+      "reward": "3 coins back"
+    },
+    {
+      "name": "Last Stand",
+      "task": "Fight the Beast at least once. Only after the Black Moon has risen.",
+      "reward": "Heal 2 and take 3 coins"
+    },
+    {
+      "name": "Helping Hands",
+      "task": "End a round on the same tile as another hero, not the castle.",
+      "reward": "Both heal 2",
+      "team": true
+    },
+    {
+      "name": "Generous Hero",
+      "task": "Give an item or a coin to another hero.",
+      "reward": "You both take 1 coin",
+      "team": true
+    },
+    {
+      "name": "Monster Slayer",
+      "task": "The team defeats 3 monsters in one round.",
+      "reward": "Draw 2 items for anyone",
+      "team": true
+    },
+    {
+      "name": "Trouble at the Quarry",
+      "task": "A small monster has settled in the quarry and the masons have downed tools. Draw a small monster, put it on the quarry, and drive it off.",
+      "reward": "The monster's own loot, plus one wall built for free",
+      "invasion": true
+    },
+    {
+      "name": "The Elven Camp Burns",
+      "task": "A big monster is loose in the elven camp. Draw a big monster, put it on the camp, and defeat it.",
+      "reward": "The monster's own loot, plus one trap set for free",
+      "invasion": true
+    },
+    {
+      "name": "Circle of Broken Stones",
+      "task": "Something squats in the stone circles and Theodore cannot work. Draw a small monster, put it there, and clear it out.",
+      "reward": "The monster's own loot, plus one moon seal for free",
+      "invasion": true
+    },
+    {
+      "name": "Fire in the Workshop",
+      "task": "A small monster is drinking Master Vial's elixirs. Draw a small monster, put it on the alchemist workshop, and stop it.",
+      "reward": "The monster's own loot, plus 2 free upgrades",
+      "invasion": true
+    },
+    {
+      "name": "Market Day Ruined",
+      "task": "A big monster is eating the stalls. Draw a big monster, put it on the marketplace, and deal with it.",
+      "reward": "The monster's own loot, plus one free item from the bag",
+      "invasion": true
+    },
+    {
+      "name": "Something in the Lake",
+      "task": "The water spirits have gone quiet. Draw a small monster, put it on the wishing lake, and beat it.",
+      "reward": "The monster's own loot, plus 4 coins",
+      "invasion": true
+    },
+    {
+      "name": "Wall Crawler",
+      "task": "A small monster is picking at the castle walls. Draw a small monster and put it on a tile touching the castle. Defeat it before the round after next, or it takes a wall marker with it.",
+      "reward": "The monster's own loot, plus 3 coins",
+      "invasion": true
+    },
+    {
+      "name": "The Sleeping Giant",
+      "task": "A big monster blocks the abandoned village. Draw a big monster, put it there, and defeat it.",
+      "reward": "The monster's own loot, plus an item and an upgrade",
+      "invasion": true
+    },
+    {
+      "name": "Siege Engineer",
+      "task": "Buy a ballista at the dwarven workshop.",
+      "reward": "3 coins back",
+      "toolkit": true
+    },
+    {
+      "name": "Gunner's Pride",
+      "task": "Let a ballista land the killing shot on a monster.",
+      "reward": "4 coins",
+      "toolkit": true
+    },
+    {
+      "name": "Horse Trader",
+      "task": "Exchange an item at the flea market.",
+      "reward": "2 coins and one upgrade",
+      "toolkit": true
+    },
+    {
+      "name": "Harvest Hand",
+      "task": "Take the coins at the fields and forests.",
+      "reward": "Draw an item",
+      "toolkit": true
+    },
+    {
+      "name": "Tamer",
+      "task": "Defeat one of the Three Daughters.",
+      "reward": "4 coins and one upgrade",
+      "toolkit": true
+    },
+    {
+      "name": "Well Shod",
+      "task": "Wear a pair of upgraded shoes.",
+      "reward": "3 coins",
+      "toolkit": true
+    },
+    {
+      "name": "Trouble at the Flea Market",
+      "task": "A big monster is rifling through the cart. Draw a big monster, put it on the flea market, and drive it off.",
+      "reward": "The monster's own loot, plus a free exchange and 3 coins",
+      "invasion": true,
+      "toolkit": true
+    },
+    {
+      "name": "Winches and Teeth",
+      "task": "A small monster is loose in the dwarven workshop. Draw a small monster, put it there, and clear it out.",
+      "reward": "The monster's own loot, plus 2 coins off your next ballista",
+      "invasion": true,
+      "toolkit": true
+    }
+  ],
+  "march": [
+    {
+      "tier": "boon",
+      "name": "The Masons Return",
+      "text": "Build one wall for free, if a wall marker is still in the box."
+    },
+    {
+      "tier": "boon",
+      "name": "Holy Ground",
+      "text": "Choose one monster. It does not move at the end of this round."
+    },
+    {
+      "tier": "boon",
+      "name": "Frozen Claws",
+      "text": "The Beast does not move at the end of this round."
+    },
+    {
+      "tier": "boon",
+      "name": "Rallying Cry",
+      "text": "This round every hero rolls one extra orange die in every battle."
+    },
+    {
+      "tier": "boon",
+      "name": "Sharpened Stakes",
+      "text": "The next trap to trigger deals 2 extra damage."
+    },
+    {
+      "tier": "neutral",
+      "name": "Echoing Horn",
+      "text": "This round you may reroll one monster die in each battle."
+    },
+    {
+      "tier": "neutral",
+      "name": "Crooked Paths",
+      "text": "This round the players choose each monster's path even when it is not the shortest, as long as every monster still ends up closer to the castle."
+    },
+    {
+      "tier": "mild",
+      "name": "Traps Jam",
+      "text": "Traps do nothing this round."
+    },
+    {
+      "tier": "mild",
+      "name": "Blunted Blades",
+      "text": "This round each hero rolls one fewer die of their choice, never going below 2 green dice."
+    },
+    {
+      "tier": "mild",
+      "name": "No Rest for the Brave",
+      "text": "No hero may rest this round."
+    },
+    {
+      "tier": "mild",
+      "name": "Dark Chorus",
+      "text": "This round every monster rolls one extra purple die, if one is free."
+    },
+    {
+      "tier": "mild",
+      "name": "Choked Roads",
+      "text": "No shortcuts this round, for heroes or monsters."
+    },
+    {
+      "tier": "harsh",
+      "name": "Double March",
+      "text": "Every small monster moves 1 extra tile at the end of this round, unless that move would take it onto the castle tile."
+    },
+    {
+      "tier": "harsh",
+      "name": "Forced March",
+      "text": "Every big monster and the Beast move 1 extra tile at the end of this round, unless that move would take them onto the castle tile."
+    },
+    {
+      "tier": "harsh",
+      "name": "Beast Rage",
+      "text": "Turn the Beast's dial up by 4."
+    },
+    {
+      "tier": "harsh",
+      "name": "Shattered Astrolabe",
+      "text": "Every hero takes only 1 action this round."
+    },
+    {
+      "tier": "harsh",
+      "name": "Black Rain",
+      "text": "Every hero loses 1 toughness now and no hero may rest this round."
+    },
+    {
+      "tier": "harsh",
+      "name": "Cracked Mortar",
+      "text": "The next monster to strike the walls destroys 2 wall markers instead of 1."
+    },
+    {
+      "tier": "harsh",
+      "name": "Wall Breach",
+      "text": "Remove one built wall marker from the game. If there are none, turn the Beast's dial up by 3."
+    },
+    {
+      "tier": "harsh",
+      "name": "Iron Hide",
+      "text": "This round the first 2 damage markers that would go on the Beast in each battle are ignored."
+    },
+    {
+      "tier": "harsh",
+      "name": "Blind Fury",
+      "text": "This round every monster swaps all of its purple dice for black dice, as far as the dice allow."
+    },
+    {
+      "tier": "harsh",
+      "name": "Shattered Seal",
+      "text": "Remove one moon seal from the board and place a small monster on that lair."
+    },
+    {
+      "tier": "harsh",
+      "name": "Swallowing Dark",
+      "text": "Remove one placed trap and one moon seal from the game."
+    },
+    {
+      "tier": "harsh",
+      "name": "Crater Bloom",
+      "text": "Place 2 small monsters three tiles from the castle."
+    },
+    {
+      "tier": "harsh",
+      "name": "Beast's Roar",
+      "text": "Every hero within two tiles of the Beast is pushed one tile away from it. The players choose the direction."
+    },
+    {
+      "tier": "harsh",
+      "name": "Terror",
+      "text": "No hero may start a battle with the Beast this round."
+    },
+    {
+      "tier": "harsh",
+      "name": "Broken Blades",
+      "text": "Every hero puts a used-equipment marker on their weapon. It cannot be used this round."
+    },
+    {
+      "tier": "harsh",
+      "name": "Kurodar Watches",
+      "text": "This round no hero may use helmet effects."
+    },
+    {
+      "tier": "harsh",
+      "name": "Gathering Storm",
+      "text": "Place a small monster on the tile the Beast started from. If the Beast has moved on, place it three tiles from the castle."
+    },
+    {
+      "tier": "neutral",
+      "name": "Word from the Walls",
+      "text": "The guards shout news from the battlements. Every hero may reroll one die once this round."
+    },
+    {
+      "tier": "boon",
+      "name": "Dwarven Volley",
+      "text": "Every ballista fires twice this round.",
+      "toolkit": true
+    },
+    {
+      "tier": "mild",
+      "name": "Jammed Winches",
+      "text": "This round each ballista fires only if the hero who bought it pays 1 coin.",
+      "toolkit": true
+    },
+    {
+      "tier": "harsh",
+      "name": "Sabotage",
+      "text": "Remove one ballista from the board and put it back in the box.",
+      "toolkit": true
+    },
+    {
+      "tier": "harsh",
+      "name": "Three Daughters Ride",
+      "text": "Every hero takes 1 damage that cannot be blocked, and no hero may rest this round.",
+      "toolkit": true
+    }
+  ],
+  "powers": [
+    {
+      "name": "Storm Finger",
+      "text": "Point at any monster anywhere on the board. Roll 2 green dice: each attack symbol puts 1 damage marker on it. If that finishes it off, take the reward on its token."
+    },
+    {
+      "name": "Moon Step",
+      "text": "Move your hero to any face-up tile. This is not an action."
+    },
+    {
+      "name": "Silver Ward",
+      "text": "In one clash, ignore every monster die. Say it before the dice are rolled."
+    },
+    {
+      "name": "Rallying Horn",
+      "text": "Every hero heals 2 toughness markers."
+    },
+    {
+      "name": "Forge Blessing",
+      "text": "Upgrade any one item on any hero, for free."
+    },
+    {
+      "name": "Mason's Word",
+      "text": "Build one wall for free, even after the masons have left. Only if a wall marker is still in the box."
+    },
+    {
+      "name": "Frostbind",
+      "text": "Choose one monster. It does not move at the end of this round. It works on the Beast too."
+    },
+    {
+      "name": "Second Wind",
+      "text": "Take one extra action this turn."
+    },
+    {
+      "name": "Echo of Dergar",
+      "text": "In one clash, reroll all of your dice once."
+    },
+    {
+      "name": "Jewel Light",
+      "text": "Heal one hero to full toughness, wherever they stand."
+    },
+    {
+      "name": "Coin Charm",
+      "text": "Take 4 coins from the supply."
+    },
+    {
+      "name": "Hunter's Mark",
+      "text": "For one whole battle, roll one extra orange die in every clash."
+    },
+    {
+      "name": "Dungeon Key",
+      "text": "Free any hero from the dungeon at once, without paying the 2 coin fee."
+    },
+    {
+      "name": "Gale Step",
+      "text": "Push one monster one tile away from the castle."
+    },
+    {
+      "name": "Dwarf's Favour",
+      "text": "Every ballista on the board fires once, right now. Toolkit only: if there are none, take 4 coins instead."
+    }
+  ],
+  "gifts": [
+    "2 extra coins",
+    "4 extra coins",
+    "Draw one item from the bag",
+    "Upgrade one item for free",
+    "Heal to full toughness",
+    "3 coins and heal 1",
+    "Draw an item and hand it to another hero",
+    "One free upgrade for any hero you choose"
+  ],
+  "wonders": [
+    "Upgrade every item you are wearing",
+    "Point at any small monster on the board and remove it from the game",
+    "Roll 2 green dice and put a damage marker on any monster for each attack symbol, then draw an item",
+    "Every hero heals to full and takes 2 coins"
+  ],
+  "odds": {
+    "gift": 22,
+    "power": 11,
+    "wonder": 2
+  },
+  "weights": {
+    "sky": {
+      "calm": {
+        "boon": 3,
+        "neutral": 2,
+        "mild": 1,
+        "harsh": 0
+      },
+      "moderate": {
+        "boon": 2,
+        "neutral": 2,
+        "mild": 2,
+        "harsh": 1
+      },
+      "dark": {
+        "boon": 1,
+        "neutral": 1,
+        "mild": 2,
+        "harsh": 3
+      }
+    },
+    "march": {
+      "calm": {
+        "boon": 2,
+        "neutral": 2,
+        "mild": 2,
+        "harsh": 2
+      },
+      "moderate": {
+        "boon": 1,
+        "neutral": 1,
+        "mild": 2,
+        "harsh": 3
+      },
+      "dark": {
+        "boon": 1,
+        "neutral": 1,
+        "mild": 1,
+        "harsh": 5
+      }
+    }
+  },
+  "map": {
+    "tiles": {
+      "1": 11,
+      "2": 12,
+      "3": 13,
+      "4": 15
+    },
+    "toolkitExtraTiles": 3,
+    "craterDistance": {
+      "calm": 4,
+      "moderate": 3,
+      "dark": 2
+    }
+  }
+}
