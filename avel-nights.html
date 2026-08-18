@@ -180,6 +180,7 @@
       <g fill="#121A11"><path d="M120 150 l14 -34 14 34 z"/><path d="M300 150 l12 -28 12 28 z"/>
         <path d="M612 150 l13 -30 13 30 z"/></g>
     </svg>
+    <p class="empty" id="skyIntro"></p>
     <button class="big" id="drawEvent">Read the sky for round <span id="rnum2">1</span></button>
     <div id="eventSlot"></div>
   </section>
@@ -222,9 +223,9 @@
         </g>
       </g>
     </svg>
+    <p class="empty" id="tavernIntro"></p>
     <button class="big" id="askQuest">Ask the innkeeper</button>
     <div id="offerSlot"></div>
-    <p class="empty" id="tavernHint">A hero must be on the castle tile to ask, and back on it to claim. Quests are written on the hero who took them, further down the page.</p>
   </section>
 
   <!-- ================= LAST MARCH ================= -->
@@ -252,9 +253,9 @@
       <circle cx="350" cy="126" r="9" fill="#86AC5C" opacity=".9"/>
       <circle cx="350" cy="126" r="17" fill="#86AC5C" opacity=".2"/>
     </svg>
+    <p class="empty" id="beastIntro"></p>
     <button class="big" id="drawMarch">The monsters advance &mdash; draw an omen</button>
     <div id="marchSlot"></div>
-    <p class="empty" id="beastHint">Use this tab instead of Read the sky once the Black Moon has risen. Omens here are meaner by design: even on Calm the deck leans dark.</p>
   </section>
 
   <!-- ================= MAP ================= -->
@@ -289,7 +290,7 @@
     <summary>How to use this at the table</summary>
     <ul>
       <li><b>The tavern is the castle.</b> There is a tavern in the castle courtyard, so no extra tile is needed. A hero standing on the castle tile may ask the innkeeper for work.</li>
-      <li><b>Events.</b> Read the sky once at the start of each round, before the first hero acts. Effects that say "this round" end with the round.</li>
+      <li><b>Events.</b> Read the sky once at the start of each round, before the first hero acts. The first read is free; the team may pay 2 coins to the supply to read again, once per round. Effects that say "this round" end with the round.</li>
       <li><b>The dungeon.</b> Some events throw a hero in the castle dungeon. Move their pawn to the castle. They take no actions until another hero pays 2 coins to the supply, and that payment is free, not an action. If nobody can pay, the prisoner may spend a whole turn doing nothing to walk out. Tap the hero's Dungeon button to remember who is locked up.</li>
       <li><b>Asking for a quest</b> costs one action and your hero must be on the castle tile. Each hero can carry two quests. Most quests pay only their own reward; the innkeeper sometimes throws in extra.</li>
       <li><b>Claiming a reward.</b> Because the tavern is now in the middle of everything, a finished quest is only paid out when that hero is back on the castle tile. Tap Done when they get there.</li>
@@ -306,7 +307,7 @@
     <summary>Ako to používať pri hre</summary>
     <ul>
       <li><b>Krčma je hrad.</b> Na hradnom nádvorí je krčma, takže netreba žiadne políčko navyše. Hrdina stojaci na hradnom políčku môže krčmára požiadať o prácu.</li>
-      <li><b>Udalosti.</b> Oblohu čítajte raz na začiatku každého kola, skôr než začne prvý hrdina. Účinky, ktoré hovoria „toto kolo", končia s kolom.</li>
+      <li><b>Udalosti.</b> Oblohu čítajte raz na začiatku každého kola, skôr než začne prvý hrdina. Prvé čítanie je zadarmo; družina môže zaplatiť 2 mince do zásoby a čítať znova, raz za kolo. Účinky, ktoré hovoria „toto kolo", končia s kolom.</li>
       <li><b>Žalár.</b> Niektoré udalosti hodia hrdinu do hradného žalára. Presuňte jeho figúrku na hrad. Nehrá, kým iný hrdina nezaplatí 2 mince do zásoby; tá platba je zadarmo, nie je to akcia. Ak nikto nemôže zaplatiť, väzeň môže stráviť celý ťah ničnerobením a vyjde von. Kto je zavretý, si zapamätáte hrdinovým tlačidlom Žalár.</li>
       <li><b>Pýtanie si úlohy</b> stojí jednu akciu a hrdina musí stáť na hradnom políčku. Každý hrdina môže niesť dve úlohy. Väčšina úloh vypláca len svoju odmenu; krčmár občas pridá niečo navyše.</li>
       <li><b>Vyzdvihnutie odmeny.</b> Keďže krčma je teraz uprostred všetkého, dokončená úloha sa vypláca, až keď je hrdina späť na hradnom políčku. Vtedy ťuknite na Hotovo.</li>
@@ -383,8 +384,9 @@ const T={
   loaded:(e,q,m,p)=>e+" sky events, "+q+" quests, "+m+" omens, "+p+" powers.",
   noLand:cd=>"No land of that size puts the crater "+cd+" tiles out. Change the tile count or the shape and try again.",
   mapNote:(n,s,cd)=>n+" tiles including the castle, "+s+" face up around it, crater "+cd+" tiles out. Small numbers are the distance from the castle.",
-  tavernHint:"A hero must be on the castle tile to ask, and back on it to claim. Quests are written on the hero who took them, further down the page.",
-  beastHint:"Use this tab instead of Read the sky once the Black Moon has risen. Omens here are meaner by design: even on Calm the deck leans dark.",
+  skyIntro:"Start every round here, before the first hero acts: read the sky aloud and resolve it. The first read is free. If the team hates the omen, they may pay 2 coins to the supply to read again, once per round. Effects that say “this round” end with the round.",
+  tavernIntro:"Any hero standing on the castle tile may spend one action to ask for a quest. You don't finish it on the spot: carry it (each hero can hold two) and complete it within two rounds, even mid-turn. The reward is paid out when that hero is next back on the castle tile, and the innkeeper sometimes adds a little extra.",
+  beastIntro:"When the Black Moon rises and the Beast appears, the sky goes quiet: stop reading it and draw an omen here instead, once at the start of every round. This deck is meaner on purpose, even on Calm it leans dark, because the last march is meant to bite. Everything else about the round works as usual.",
   mapHint:"The generator lays out the shape of Avel, not which tile is which. Put the castle where it is marked, leave the marked starting slots face up, shuffle your remaining tiles face down into the empty slots, and stand the crater token on its slot. Crater distance follows the difficulty above: 4 tiles out on Calm, 3 on Restless, 2 on Cursed."},
  sk:{tiers:{boon:"Láskavosť",neutral:"Zvláštnosť",mild:"Ťažkosti",harsh:"Temnota"},
   night:"Noc",box:"Škatuľa",round:"Kolo",tiles:"Políčka",shape:"Tvar",
@@ -406,8 +408,9 @@ const T={
   loaded:(e,q,m,p)=>e+" udalostí oblohy, "+q+" úloh, "+m+" znamení, "+p+" schopností.",
   noLand:cd=>"Žiadna krajina tejto veľkosti nedostane kráter "+cd+" políčok ďaleko. Zmeň počet políčok alebo tvar a skús znova.",
   mapNote:(n,s,cd)=>n+" políčok vrátane hradu, "+s+" odkrytých okolo neho, kráter "+cd+" políčok ďaleko. Malé čísla sú vzdialenosť od hradu.",
-  tavernHint:"Hrdina musí stáť na hradnom políčku, keď sa pýta, a znova na ňom, keď si vyzdvihuje odmenu. Úlohy sú zapísané pri hrdinovi, ktorý si ich vzal, nižšie na stránke.",
-  beastHint:"Po východe Čierneho mesiaca používaj túto záložku namiesto Čítania oblohy. Tunajšie znamenia sú zámerne krutejšie: aj na Pokojnej sa balíček kloní k temnote.",
+  skyIntro:"Každé kolo začnite tu, skôr než začne prvý hrdina: prečítajte oblohu nahlas a vykonajte ju. Prvé čítanie je zadarmo. Ak sa družine znamenie nepáči, môže zaplatiť 2 mince do zásoby a čítať znova, raz za kolo. Účinky „toto kolo“ končia s kolom.",
+  tavernIntro:"Hrdina stojaci na hradnom políčku môže minúť jednu akciu a vypýtať si úlohu. Nemusí ju splniť hneď: nesie ju so sebou (každý hrdina unesie dve) a dokončí ju do dvoch kôl, pokojne aj uprostred ťahu. Odmena sa vypláca, keď je ten hrdina nabudúce späť na hradnom políčku, a krčmár občas pridá niečo navyše.",
+  beastIntro:"Keď vyjde Čierny mesiac a objaví sa Beštia, obloha stíchne: prestaňte ju čítať a namiesto toho tu raz na začiatku každého kola ťahajte znamenie. Tento balíček je zámerne krutejší, aj na Pokojnej sa kloní k temnote, posledný pochod má hrýzť. Všetko ostatné v kole funguje ako zvyčajne.",
   mapHint:"Generátor určuje tvar krajiny Avel, nie ktoré políčko je ktoré. Hrad polož na označené miesto, označené štartovacie políčka nechaj odkryté, zvyšné políčka zamiešaj lícom nadol na prázdne miesta a na určené políčko postav žetón krátera. Vzdialenosť krátera sa riadi náročnosťou vyššie: 4 políčka na Pokojnej, 3 na Nepokojnej, 2 na Prekliatej."}
 };
 const t=k=>T[lang][k];
@@ -612,10 +615,15 @@ function genMap(n,craterDist){
       const arr=[...cand.values()];
       if(!arr.length) break;
       arr.sort((a,b)=>dist(a)-dist(b));
-      const i=sprawl
-        ? Math.min(arr.length-1, Math.floor(arr.length*(0.45+0.55*Math.random())))
-        : Math.floor(arr.length*0.55*Math.random());
-      add(arr[Math.min(i,arr.length-1)]);
+      let cell;
+      if(sprawl){
+        cell=arr[Math.min(arr.length-1, Math.floor(arr.length*0.55*Math.random()))];
+      }else{
+        // compact: ring-fill — always one of the cells nearest the castle, like the box setup
+        const near=arr.filter(c=>dist(c)===dist(arr[0]));
+        cell=near[Math.random()*near.length|0];
+      }
+      add(cell);
     }
     if(cells.length<n) continue;
     return {cells:cells,crater:crater,starts:cells.filter(c=>dist(c)===1)};
@@ -711,8 +719,8 @@ function applyLang(){
   $("roundLab").innerHTML=t("round")+' <b id="rnum">'+round+'</b>';
   $("heroesH").textContent=t("heroes"); $("addHero").textContent=t("addHero");
   $("pickLab").textContent=t("whoJoins");
-  $("tavernHint").textContent=t("tavernHint"); $("beastHint").textContent=t("beastHint");
-  $("mapHint").textContent=t("mapHint");
+  $("skyIntro").textContent=t("skyIntro"); $("tavernIntro").textContent=t("tavernIntro");
+  $("beastIntro").textContent=t("beastIntro"); $("mapHint").textContent=t("mapHint");
   $("help-en").hidden=lang!=="en"; $("help-sk").hidden=lang!=="sk";
   $("langSeg").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.l===lang));
 }

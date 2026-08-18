@@ -69,8 +69,9 @@ appear once per card so the two languages cannot drift.
 }
 ```
 
-Current counts: 57 sky, 42 tavern, 34 march, 15 powers, 8 gifts, 4 wonders, of which 20 cards are
-`toolkit: true`.
+Current counts: 55 sky, 42 tavern, 34 march, 15 powers, 8 gifts, 4 wonders, of which 20 cards are
+`toolkit: true`. (Adam reviewed the deck in Aug 2026: removed Gaol Break and Restless Beasts,
+rebalanced several boons — treat the JSON as the source of truth, not this count.)
 
 Missing keys degrade instead of crashing: no `weights` means all tiers equally likely, no `odds`
 falls back to 22/11/2, empty `gifts` makes gift rolls come out plain.
@@ -79,6 +80,9 @@ falls back to 22/11/2, empty `gifts` makes gift rolls come out plain.
 
 - **Difficulty** (Calm / Restless / Cursed) is a weighting, not a separate deck. Decks are built by
   repeating each card `weight[tier]` times and shuffling, so no immediate repeats.
+- **Reading the sky** is free once per round; the team may pay 2 coins to the supply to read again,
+  once per round (that is the table rule behind the "Read again" button). Each section has an intro
+  paragraph (`skyIntro`/`tavernIntro`/`beastIntro` in the `T` dictionary) stating its rule.
 - **The march has its own weight table.** Calm during the last march is not calm: measured shares
   are 57% harsh on Calm, 74% Restless, 87% Cursed. This was a deliberate correction; do not
   re-unify the two tables.
@@ -192,9 +196,13 @@ Produces the shape of the land, never which tile is which, so face-down discover
 - Crater distance comes from the difficulty: 4 tiles out on Calm, 3 on Restless, 2 on Cursed. The
   adventure maps sheet says beginners leave 3 tiles between crater and castle, closer is harder.
 - Algorithm: lay a random road from the castle out to the crater distance **first**, force the castle
-  to 3 neighbours, then grow the remaining cells with a compact or sprawling bias that never touches
-  the castle again. The road-first step matters: a naive compact blob never reaches distance 4 at 12
-  tiles, and the first version failed 100% of the time on Calm.
+  to 3 neighbours, then grow the remaining cells; growth never touches the castle again. The
+  road-first step matters: a naive compact blob never reaches distance 4 at 12 tiles, and the first
+  version failed 100% of the time on Calm.
+- **Compact** growth is a ring-fill: each new tile is chosen randomly among the candidates nearest
+  the castle, so the crater road is the map's only outpost — the farthest tile never exceeds the
+  crater distance. **Sprawling** uses the distance-biased random pick that used to be Compact
+  (earlier Compact still produced eccentric shapes; this was rebalanced on Adam's request).
 - Validated over 900 generated maps, 150 per difficulty-and-shape pair: zero failures, crater at
   exactly the intended distance, castle always 3 neighbours, always fully connected.
 
