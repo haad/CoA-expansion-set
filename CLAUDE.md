@@ -46,15 +46,20 @@ embedded copy of the content as a fallback, that reintroduces two sources of tru
 
 ## avel-cards.json contract
 
+All text fields are bilingual objects `{"en": "...", "sk": "..."}`. A plain string is still legal
+and serves both languages (the page resolves `sk → en → raw string`), so untranslated entries
+degrade to English instead of breaking. Structural fields (`tier`, `toolkit`, `team`, `invasion`)
+appear once per card so the two languages cannot drift.
+
 ```jsonc
 {
-  "sky":     [{ "tier": "boon|neutral|mild|harsh", "name": "...", "text": "...", "toolkit": true? }],
+  "sky":     [{ "tier": "boon|neutral|mild|harsh", "name": {en,sk}, "text": {en,sk}, "toolkit": true? }],
   "march":   [ same shape ],
-  "tavern":  [{ "name": "...", "task": "...", "reward": "...",
+  "tavern":  [{ "name": {en,sk}, "task": {en,sk}, "reward": {en,sk},
                 "team": true?, "invasion": true?, "toolkit": true? }],
-  "powers":  [{ "name": "...", "text": "..." }],
-  "gifts":   ["short reward string", ...],
-  "wonders": ["short reward string", ...],
+  "powers":  [{ "name": {en,sk}, "text": {en,sk} }],
+  "gifts":   [{en,sk}, ...],
+  "wonders": [{en,sk}, ...],
   "odds":    { "gift": 22, "power": 11, "wonder": 2 },   // remainder is a plain quest
   "weights": { "sky":   { "calm": {"boon":3,"neutral":2,"mild":1,"harsh":0}, "moderate": {...}, "dark": {...} },
                "march": { ... } },                        // copies of each card per tier in the shuffled deck
@@ -92,6 +97,12 @@ falls back to 22/11/2, empty `gifts` makes gift rolls come out plain.
 - **Round counter** clears the current event and re-evaluates expiry.
 - **Toolkit toggle** filters `toolkit: true` cards out of all three decks and adds 3 to the default
   map size.
+- **Language toggle** (EN / SK, top bar) switches card text and all UI chrome; the choice persists
+  in localStorage (`avel-nights-lang`). Cards carry both languages, so decks are language-neutral
+  and a switch just re-renders — the drawn card stays and changes language. UI strings live in the
+  `T` dictionary in the page; the long help section exists as two `<details>` blocks
+  (`help-en`/`help-sk`) toggled by `hidden`. The Slovak card text was machine-written and awaits a
+  native read-through.
 
 ## Design invariants — do not break these
 
@@ -215,8 +226,10 @@ only with the toolkit on; map geometry checks above. Also `node --check` the ext
 - **Partial persistence.** The roster (names, portraits, coats of arms) survives a reload via
   localStorage; the round number, quests and powers still do not. If that ever gets extended, it
   must keep degrading silently when storage is unavailable.
-- **Slovak translation.** The cards are all in `avel-cards.json`, so translating is editing one file.
-  It is the largest remaining piece of real work and the code needs no changes.
+- **Slovak translation is in but unreviewed.** Every entry in `avel-cards.json` carries an `sk`
+  field written by Claude, informal register, aimed at read-aloud-to-a-child. A native-speaker pass
+  over the card file is the remaining work; terminology to check first: zásoba (supply),
+  odolnosť (toughness), stret (clash), políčko (tile), počítadlo Beštie (Beast dial).
 - **Map tile counts are derived, not counted.** 11/12/13/15 by player count came from reading the
   setup diagram captions, not from counting the box. There is a +/- control as a hedge. Confirm
   against the physical box and fix the defaults.

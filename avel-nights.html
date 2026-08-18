@@ -111,11 +111,11 @@
 
   <header>
     <div class="moon"><div class="shadow" id="shadow"></div><div class="num" id="moonnum">1</div></div>
-    <div><h1>Avel Nights</h1><div class="sub">Events, quests &amp; the last march</div></div>
+    <div><h1>Avel Nights</h1><div class="sub" id="sub">Events, quests &amp; the last march</div></div>
   </header>
 
   <div class="bar">
-    <span class="lab">Night</span>
+    <span class="lab" id="labNight">Night</span>
     <div class="seg" id="diff">
       <button data-d="calm" aria-pressed="true">Calm</button>
       <button data-d="moderate" aria-pressed="false">Restless</button>
@@ -123,16 +123,20 @@
     </div>
     <div class="round">
       <button id="rdown" aria-label="Previous round">&minus;</button>
-      <span>Round <b id="rnum">1</b></span>
+      <span id="roundLab">Round <b id="rnum">1</b></span>
       <button id="rup" aria-label="Next round">+</button>
     </div>
   </div>
 
   <div class="bar">
-    <span class="lab">Box</span>
+    <span class="lab" id="labBox">Box</span>
     <div class="seg" id="kit">
       <button data-k="base" aria-pressed="true">Base game</button>
       <button data-k="toolkit" aria-pressed="false">+ Toolkit</button>
+    </div>
+    <div class="seg" id="langSeg" style="margin-left:auto">
+      <button data-l="en" aria-pressed="true">EN</button>
+      <button data-l="sk" aria-pressed="false">SK</button>
     </div>
   </div>
 
@@ -220,7 +224,7 @@
     </svg>
     <button class="big" id="askQuest">Ask the innkeeper</button>
     <div id="offerSlot"></div>
-    <p class="empty">A hero must be on the castle tile to ask, and back on it to claim. Quests are written on the hero who took them, further down the page.</p>
+    <p class="empty" id="tavernHint">A hero must be on the castle tile to ask, and back on it to claim. Quests are written on the hero who took them, further down the page.</p>
   </section>
 
   <!-- ================= LAST MARCH ================= -->
@@ -250,19 +254,19 @@
     </svg>
     <button class="big" id="drawMarch">The monsters advance &mdash; draw an omen</button>
     <div id="marchSlot"></div>
-    <p class="empty">Use this tab instead of Read the sky once the Black Moon has risen. Omens here are meaner by design: even on Calm the deck leans dark.</p>
+    <p class="empty" id="beastHint">Use this tab instead of Read the sky once the Black Moon has risen. Omens here are meaner by design: even on Calm the deck leans dark.</p>
   </section>
 
   <!-- ================= MAP ================= -->
   <section id="view-map" hidden>
     <div class="bar">
-      <span class="lab">Tiles</span>
+      <span class="lab" id="labTiles">Tiles</span>
       <div class="round" style="margin-left:0">
         <button id="tdown" aria-label="Fewer tiles">&minus;</button>
         <span><b id="tnum">12</b></span>
         <button id="tup" aria-label="More tiles">+</button>
       </div>
-      <span class="lab">Shape</span>
+      <span class="lab" id="labShape">Shape</span>
       <div class="seg" id="shape">
         <button data-s="compact" aria-pressed="true">Compact</button>
         <button data-s="sprawl" aria-pressed="false">Sprawling</button>
@@ -270,18 +274,18 @@
     </div>
     <button class="big" id="genMap">Draw a new land</button>
     <div id="mapSlot"></div>
-    <p class="empty">The generator lays out the shape of Avel, not which tile is which. Put the castle where it is marked, leave the marked starting slots face up, shuffle your remaining tiles face down into the empty slots, and stand the crater token on its slot. Crater distance follows the difficulty above: 4 tiles out on Calm, 3 on Restless, 2 on Cursed.</p>
+    <p class="empty" id="mapHint">The generator lays out the shape of Avel, not which tile is which. Put the castle where it is marked, leave the marked starting slots face up, shuffle your remaining tiles face down into the empty slots, and stand the crater token on its slot. Crater distance follows the difficulty above: 4 tiles out on Calm, 3 on Restless, 2 on Cursed.</p>
   </section>
 
   <!-- ================= HEROES ================= -->
-  <h3>Heroes</h3>
+  <h3 id="heroesH">Heroes</h3>
   <div id="roster"></div>
   <div class="row"><button id="addHero">Add a hero</button></div>
   <div class="row" id="facePick" hidden></div>
 
   <div id="note" class="empty"></div>
 
-  <details>
+  <details id="help-en">
     <summary>How to use this at the table</summary>
     <ul>
       <li><b>The tavern is the castle.</b> There is a tavern in the castle courtyard, so no extra tile is needed. A hero standing on the castle tile may ask the innkeeper for work.</li>
@@ -295,6 +299,23 @@
       <li><b>Powers</b> belong to the hero who earned them and are one use each. Tap Cast to spend one.</li>
       <li><b>Your own cards.</b> Every event, quest, power and probability lives in <b>avel-cards.json</b> next to this page. Edit that file and reload. The page needs to be served over http, so from that folder run <b>python3 -m http.server 8000</b> and open <b>http://localhost:8000/avel-nights.html</b>.</li>
       <li><b>Safety rules.</b> No event stuns a hero, moves the astrolabe, or lets a monster reach the castle earlier than the normal rules allow.</li>
+    </ul>
+  </details>
+
+  <details id="help-sk" hidden>
+    <summary>Ako to používať pri hre</summary>
+    <ul>
+      <li><b>Krčma je hrad.</b> Na hradnom nádvorí je krčma, takže netreba žiadne políčko navyše. Hrdina stojaci na hradnom políčku môže krčmára požiadať o prácu.</li>
+      <li><b>Udalosti.</b> Oblohu čítajte raz na začiatku každého kola, skôr než začne prvý hrdina. Účinky, ktoré hovoria „toto kolo", končia s kolom.</li>
+      <li><b>Žalár.</b> Niektoré udalosti hodia hrdinu do hradného žalára. Presuňte jeho figúrku na hrad. Nehrá, kým iný hrdina nezaplatí 2 mince do zásoby; tá platba je zadarmo, nie je to akcia. Ak nikto nemôže zaplatiť, väzeň môže stráviť celý ťah ničnerobením a vyjde von. Kto je zavretý, si zapamätáte hrdinovým tlačidlom Žalár.</li>
+      <li><b>Pýtanie si úlohy</b> stojí jednu akciu a hrdina musí stáť na hradnom políčku. Každý hrdina môže niesť dve úlohy. Väčšina úloh vypláca len svoju odmenu; krčmár občas pridá niečo navyše.</li>
+      <li><b>Vyzdvihnutie odmeny.</b> Keďže krčma je teraz uprostred všetkého, dokončená úloha sa vypláca, až keď je hrdina späť na hradnom políčku. Vtedy ťuknite na Hotovo.</li>
+      <li><b>Úlohy vypršia</b> dve kolá po prijatí. Nič zlé sa nestane.</li>
+      <li><b>Invázie.</b> Keď úloha pošle príšeru do dielne, ťahajte žetón z príslušného stohu a položte ho na to políčko. Kým tam sedí, akcia políčka sa nedá použiť. Ak políčko ešte nie je na mape, pýtajte si inú úlohu. Žiadna invázia nikdy nepoloží príšeru na hradné políčko, to by hru prehralo na mieste.</li>
+      <li><b>Toolkit.</b> Prepnite škatuľu na + Toolkit a do balíčkov pribudne 20 kariet navyše: balisty, vozík blšieho trhu, polia a lesy, topánky a Tri dcéry.</li>
+      <li><b>Schopnosti</b> patria hrdinovi, ktorý si ich zaslúžil, a sú na jedno použitie. Minutú schopnosť odstránite tlačidlom Zošli.</li>
+      <li><b>Vlastné karty.</b> Každá udalosť, úloha, schopnosť aj pravdepodobnosť žije v súbore <b>avel-cards.json</b> vedľa tejto stránky. Upravte súbor a obnovte stránku. Stránka musí bežať cez http, takže v tom priečinku spustite <b>python3 -m http.server 8000</b> a otvorte <b>http://localhost:8000/avel-nights.html</b>.</li>
+      <li><b>Pravidlá bezpečia.</b> Žiadna udalosť neomráči hrdinu, nepohne astrolábom a nepustí príšeru k hradu skôr, než dovoľujú bežné pravidlá.</li>
     </ul>
   </details>
 
@@ -319,7 +340,8 @@ const FACES=[
  {n:"Hedgehog",s:'<svg width="40" height="40" viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#1E2718"/><path d="M7 30 L11 13 L17 21 L22 7 L27 21 L33 11 L38 20 L41 30 Z" fill="#4A3A22"/><circle cx="24" cy="31" r="12.5" fill="#E0C9A0"/><circle cx="19" cy="29" r="1.8" fill="#141A12"/><circle cx="29" cy="29" r="1.8" fill="#141A12"/><ellipse cx="24" cy="35.5" rx="2.6" ry="2" fill="#141A12"/></svg>'},
  {n:"Bear",s:'<svg width="40" height="40" viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#1E2718"/><circle cx="12" cy="12" r="5.5" fill="#6B4F2E"/><circle cx="36" cy="12" r="5.5" fill="#6B4F2E"/><circle cx="12" cy="12" r="2.4" fill="#8A6A3E"/><circle cx="36" cy="12" r="2.4" fill="#8A6A3E"/><circle cx="24" cy="27" r="16" fill="#6B4F2E"/><ellipse cx="24" cy="33" rx="7.5" ry="6" fill="#E0C9A0"/><ellipse cx="24" cy="31" rx="2.8" ry="2.2" fill="#141A12"/><circle cx="17.5" cy="23" r="2" fill="#141A12"/><circle cx="30.5" cy="23" r="2" fill="#141A12"/></svg>'},
  {n:"Mouse",s:'<svg width="40" height="40" viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#1E2718"/><circle cx="12" cy="13" r="7.5" fill="#93A07E"/><circle cx="36" cy="13" r="7.5" fill="#93A07E"/><circle cx="12" cy="13" r="4" fill="#F1E7D0" opacity=".55"/><circle cx="36" cy="13" r="4" fill="#F1E7D0" opacity=".55"/><circle cx="24" cy="28" r="14" fill="#93A07E"/><circle cx="19" cy="26" r="1.9" fill="#141A12"/><circle cx="29" cy="26" r="1.9" fill="#141A12"/><circle cx="24" cy="33" r="2" fill="#C1483F"/><path d="M13 32 h7 M13 35 h7 M28 32 h7 M28 35 h7" stroke="#141A12" stroke-width="1" opacity=".5"/></svg>'},
- {n:"Wolf",s:'<svg width="40" height="40" viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#1E2718"/><path d="M9 19 L12 5 L20 12 Z" fill="#8A9678"/><path d="M28 12 L36 5 L39 19 Z" fill="#8A9678"/><circle cx="24" cy="27" r="16" fill="#8A9678"/><path d="M24 24 L18 34 h12 Z" fill="#F1E7D0" opacity=".85"/><circle cx="24" cy="34" r="2.4" fill="#141A12"/><circle cx="17" cy="23" r="2" fill="#E0A93C"/><circle cx="31" cy="23" r="2" fill="#E0A93C"/></svg>'}
+ {n:"Wolf",s:'<svg width="40" height="40" viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#1E2718"/><path d="M9 19 L12 5 L20 12 Z" fill="#8A9678"/><path d="M28 12 L36 5 L39 19 Z" fill="#8A9678"/><circle cx="24" cy="27" r="16" fill="#8A9678"/><path d="M24 24 L18 34 h12 Z" fill="#F1E7D0" opacity=".85"/><circle cx="24" cy="34" r="2.4" fill="#141A12"/><circle cx="17" cy="23" r="2" fill="#E0A93C"/><circle cx="31" cy="23" r="2" fill="#E0A93C"/></svg>'},
+ {n:"Tortoise",s:'<svg width="40" height="40" viewBox="0 0 48 48"><circle cx="24" cy="24" r="23" fill="#1E2718"/><path d="M8 28 a16 14 0 0 1 32 0 z" fill="#6B4F2E"/><path d="M16 17 v11 M24 14 v14 M32 17 v11 M9 23 h30" stroke="#4A3A22" stroke-width="1.6" fill="none"/><circle cx="24" cy="31" r="12" fill="#86AC5C"/><circle cx="19.5" cy="29" r="1.8" fill="#141A12"/><circle cx="28.5" cy="29" r="1.8" fill="#141A12"/><path d="M20 35 q4 3 8 0" stroke="#141A12" stroke-width="1.4" fill="none"/></svg>'}
 ];
 
 /* ---------------- coats of arms, tap the shield to cycle ---------------- */
@@ -334,6 +356,61 @@ const ARMS=[
  {n:"Castle wall",s:'<svg width="40" height="40" viewBox="0 0 48 48"><path d="'+SH+'" fill="#6B4F2E" stroke="#3F4E34" stroke-width="1.5"/><g fill="#F1E7D0"><rect x="13" y="15" width="9" height="6"/><rect x="24" y="15" width="9" height="6"/><rect x="18" y="23" width="9" height="6"/><rect x="13" y="31" width="9" height="6"/><rect x="24" y="31" width="8" height="6"/></g></svg>'},
  {n:"Green leaf",s:'<svg width="40" height="40" viewBox="0 0 48 48"><path d="'+SH+'" fill="#17260C" stroke="#3F4E34" stroke-width="1.5"/><path d="M24 12 q11 6 0 24 q-11 -18 0 -24" fill="#86AC5C"/><path d="M24 14 v20" stroke="#26311F" stroke-width="1.4"/></svg>'}
 ];
+
+/* ---------------- two languages ----------------
+   card fields may be a plain string or {en,sk}; L() falls back to English,
+   then to the raw string, so untranslated entries just show English */
+let lang="en"; try{if(localStorage.getItem("avel-nights-lang")==="sk")lang="sk";}catch(e){}
+const L=v=>typeof v==="string"?v:(v&&(v[lang]||v.en))||"";
+const T={
+ en:{tiers:{boon:"A kindness",neutral:"An oddity",mild:"Trouble",harsh:"Darkness"},
+  night:"Night",box:"Box",round:"Round",tiles:"Tiles",shape:"Shape",
+  calm:"Calm",moderate:"Restless",dark:"Cursed",base:"Base game",toolkit:"+ Toolkit",
+  compact:"Compact",sprawl:"Sprawling",
+  tabSky:"Read the sky",tabTavern:"The tavern",tabBeast:"The last march",tabMap:"Map",
+  sub:"Events, quests & the last march",
+  readSky:"Read the sky for round ",askInn:"Ask the innkeeper",
+  drawOmen:"The monsters advance — draw an omen",newLand:"Draw a new land",
+  readAgain:"Read again",anotherOmen:"Draw another omen",
+  offered:"Offered",invasion:"Invasion",reward:"Reward: ",take:"Take the quest",another:"Ask for another",
+  whoTakes:"Which hero takes it",
+  power:"The innkeeper teaches a power: ",rare:"And something rare: ",extra:"And a little extra: ",
+  heroes:"Heroes",addHero:"Add a hero",whoJoins:"Who joins?",noQuests:"No quests. Send them to the tavern.",
+  endsAfter:"ends after round ",expired:"Expired",done:"Done",giveUp:"Give up",clear:"Clear",
+  cast:"Cast and spend",dungeon:"Dungeon",inDungeon:"In the dungeon",removeHero:"Remove",
+  twoQuests:" is already carrying two quests.",fourHeroes:"Four heroes is the limit of the box.",
+  claims:" claims: ",learns:"and learns ",also:"and also: ",
+  loaded:(e,q,m,p)=>e+" sky events, "+q+" quests, "+m+" omens, "+p+" powers.",
+  noLand:cd=>"No land of that size puts the crater "+cd+" tiles out. Change the tile count or the shape and try again.",
+  mapNote:(n,s,cd)=>n+" tiles including the castle, "+s+" face up around it, crater "+cd+" tiles out. Small numbers are the distance from the castle.",
+  tavernHint:"A hero must be on the castle tile to ask, and back on it to claim. Quests are written on the hero who took them, further down the page.",
+  beastHint:"Use this tab instead of Read the sky once the Black Moon has risen. Omens here are meaner by design: even on Calm the deck leans dark.",
+  mapHint:"The generator lays out the shape of Avel, not which tile is which. Put the castle where it is marked, leave the marked starting slots face up, shuffle your remaining tiles face down into the empty slots, and stand the crater token on its slot. Crater distance follows the difficulty above: 4 tiles out on Calm, 3 on Restless, 2 on Cursed."},
+ sk:{tiers:{boon:"Láskavosť",neutral:"Zvláštnosť",mild:"Ťažkosti",harsh:"Temnota"},
+  night:"Noc",box:"Škatuľa",round:"Kolo",tiles:"Políčka",shape:"Tvar",
+  calm:"Pokojná",moderate:"Nepokojná",dark:"Prekliata",base:"Základná hra",toolkit:"+ Toolkit",
+  compact:"Zomknutá",sprawl:"Rozľahlá",
+  tabSky:"Čítaj oblohu",tabTavern:"Krčma",tabBeast:"Posledný pochod",tabMap:"Mapa",
+  sub:"Udalosti, úlohy a posledný pochod",
+  readSky:"Čítaj oblohu pre kolo ",askInn:"Spýtaj sa krčmára",
+  drawOmen:"Príšery postupujú — ťahaj znamenie",newLand:"Vytvor novú krajinu",
+  readAgain:"Čítaj znova",anotherOmen:"Ťahaj ďalšie znamenie",
+  offered:"Ponuka",invasion:"Invázia",reward:"Odmena: ",take:"Prijmi úlohu",another:"Pýtaj inú",
+  whoTakes:"Ktorý hrdina ju berie",
+  power:"Krčmár ťa naučí schopnosť: ",rare:"A niečo vzácne: ",extra:"A malý bonus navyše: ",
+  heroes:"Hrdinovia",addHero:"Pridaj hrdinu",whoJoins:"Kto sa pridá?",noQuests:"Žiadne úlohy. Pošli ich do krčmy.",
+  endsAfter:"končí po kole ",expired:"Vypršala",done:"Hotovo",giveUp:"Vzdaj sa",clear:"Odlož",
+  cast:"Zošli a spotrebuj",dungeon:"Žalár",inDungeon:"V žalári",removeHero:"Odstráň",
+  twoQuests:" už nesie dve úlohy.",fourHeroes:"Štyria hrdinovia sú maximum škatule.",
+  claims:" získava: ",learns:"a učí sa ",also:"a k tomu: ",
+  loaded:(e,q,m,p)=>e+" udalostí oblohy, "+q+" úloh, "+m+" znamení, "+p+" schopností.",
+  noLand:cd=>"Žiadna krajina tejto veľkosti nedostane kráter "+cd+" políčok ďaleko. Zmeň počet políčok alebo tvar a skús znova.",
+  mapNote:(n,s,cd)=>n+" políčok vrátane hradu, "+s+" odkrytých okolo neho, kráter "+cd+" políčok ďaleko. Malé čísla sú vzdialenosť od hradu.",
+  tavernHint:"Hrdina musí stáť na hradnom políčku, keď sa pýta, a znova na ňom, keď si vyzdvihuje odmenu. Úlohy sú zapísané pri hrdinovi, ktorý si ich vzal, nižšie na stránke.",
+  beastHint:"Po východe Čierneho mesiaca používaj túto záložku namiesto Čítania oblohy. Tunajšie znamenia sú zámerne krutejšie: aj na Pokojnej sa balíček kloní k temnote.",
+  mapHint:"Generátor určuje tvar krajiny Avel, nie ktoré políčko je ktoré. Hrad polož na označené miesto, označené štartovacie políčka nechaj odkryté, zvyšné políčka zamiešaj lícom nadol na prázdne miesta a na určené políčko postav žetón krátera. Vzdialenosť krátera sa riadi náročnosťou vyššie: 4 políčka na Pokojnej, 3 na Nepokojnej, 2 na Prekliatej."}
+};
+const t=k=>T[lang][k];
 
 /* ---------------- cards, all loaded from avel-cards.json ---------------- */
 let EVENTS=[], MARCH=[], QUESTS=[], POWERS=[], GIFTS=[], WONDERS=[];
@@ -377,41 +454,40 @@ function buildQuestDeck(){questDeck=shuffle(QUESTS.filter(q=>inBox(q)&&!(heroes.
 
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const TIERNAME={boon:"A kindness",neutral:"An oddity",mild:"Trouble",harsh:"Darkness"};
 
 function renderMoon(){
   $("shadow").style.setProperty("--eclipse",{calm:"62%",moderate:"34%",dark:"6%"}[diff]);
   $("moonnum").textContent=round; $("rnum").textContent=round; $("rnum2").textContent=round;
 }
 function eventCard(e,btnId,btnLabel){
-  const t=TIERNAME[e.tier]?e.tier:"neutral";
-  return '<div class="card '+t+'"><div class="chead">'+SIG[t]+'<div><div class="tier">'+TIERNAME[t]+
-    '</div><h2>'+esc(e.name)+'</h2><p>'+esc(e.text)+'</p></div></div>'+
+  const tier=T.en.tiers[e.tier]?e.tier:"neutral";
+  return '<div class="card '+tier+'"><div class="chead">'+SIG[tier]+'<div><div class="tier">'+t("tiers")[tier]+
+    '</div><h2>'+esc(L(e.name))+'</h2><p>'+esc(L(e.text))+'</p></div></div>'+
     '<div class="row"><button id="'+btnId+'">'+btnLabel+'</button></div></div>';
 }
 function renderEvent(){const s=$("eventSlot");if(!currentEvent){s.innerHTML="";return;}
-  s.innerHTML=eventCard(currentEvent,"reroll","Read again");$("reroll").onclick=doEvent;}
+  s.innerHTML=eventCard(currentEvent,"reroll",t("readAgain"));$("reroll").onclick=doEvent;}
 function renderMarch(){const s=$("marchSlot");if(!currentMarch){s.innerHTML="";return;}
-  s.innerHTML=eventCard(currentMarch,"remarch","Draw another omen");$("remarch").onclick=doMarch;}
+  s.innerHTML=eventCard(currentMarch,"remarch",t("anotherOmen"));$("remarch").onclick=doMarch;}
 
 function extraHtml(x){
   if(!x) return "";
-  if(x.k==="power") return '<div class="reward extra">The innkeeper teaches a power: <b>'+esc(x.pw.name)+'</b><br>'+esc(x.pw.text)+'</div>';
-  if(x.k==="wonder") return '<div class="reward jack">And something rare: <b>'+esc(x.t)+'</b></div>';
-  return '<div class="reward extra">And a little extra: <b>'+esc(x.t)+'</b></div>';
+  if(x.k==="power") return '<div class="reward extra">'+t("power")+'<b>'+esc(L(x.pw.name))+'</b><br>'+esc(L(x.pw.text))+'</div>';
+  if(x.k==="wonder") return '<div class="reward jack">'+t("rare")+'<b>'+esc(L(x.t))+'</b></div>';
+  return '<div class="reward extra">'+t("extra")+'<b>'+esc(L(x.t))+'</b></div>';
 }
 function renderOffer(){
   const s=$("offerSlot"); if(!offer){s.innerHTML="";return;}
-  const who=heroes.length>1?'<select id="owner" aria-label="Which hero takes it">'+
+  const who=heroes.length>1?'<select id="owner" aria-label="'+t("whoTakes")+'">'+
     heroes.map(h=>'<option value="'+h.id+'">'+esc(h.name)+'</option>').join("")+'</select>':"";
   s.innerHTML='<div class="card quest"><div class="chead">'+SIG.quest+'<div><div class="tier">'+
-    (offer.invasion?"Invasion":"Offered")+'</div><h2>'+esc(offer.name)+'</h2><p>'+esc(offer.task)+'</p></div></div>'+
-    '<div class="reward">Reward: <b>'+esc(offer.reward)+'</b></div>'+extraHtml(offer.extra)+
-    '<div class="row">'+who+'<button class="go" id="accept">Take the quest</button>'+
-    '<button id="decline">Ask for another</button></div></div>';
+    (offer.invasion?t("invasion"):t("offered"))+'</div><h2>'+esc(L(offer.name))+'</h2><p>'+esc(L(offer.task))+'</p></div></div>'+
+    '<div class="reward">'+t("reward")+'<b>'+esc(L(offer.reward))+'</b></div>'+extraHtml(offer.extra)+
+    '<div class="row">'+who+'<button class="go" id="accept">'+t("take")+'</button>'+
+    '<button id="decline">'+t("another")+'</button></div></div>';
   $("accept").onclick=()=>{
     const h=heroes.find(x=>x.id==(heroes.length>1?$("owner").value:heroes[0].id));
-    if(h.quests.filter(q=>!q.expired).length>=2){alert(h.name+" is already carrying two quests.");return;}
+    if(h.quests.filter(q=>!q.expired).length>=2){alert(h.name+t("twoQuests"));return;}
     h.quests.unshift(Object.assign({},offer,{id:++qid,until:round+2,expired:false}));
     offer=null; renderOffer(); renderRoster();
   };
@@ -423,15 +499,15 @@ function renderRoster(){
   el.innerHTML=heroes.map(h=>{
     const quests=h.quests.length?h.quests.map(q=>{
       let extra="";
-      if(q.extra) extra=q.extra.k==="power"?q.extra.pw.name:q.extra.t;
-      return '<div class="task '+(q.expired?"expired":"")+'"><h5>'+esc(q.name)+'</h5>'+
-        '<div class="meta">'+(q.expired?"Expired":"ends after round "+q.until)+' &middot; '+esc(q.reward)+
-        (extra?" &middot; "+esc(extra):"")+'</div><p>'+esc(q.task)+'</p>'+
-        '<div class="row">'+(q.expired?"":'<button class="done" data-done="'+h.id+':'+q.id+'">Done</button>')+
-        '<button data-drop="'+h.id+':'+q.id+'">'+(q.expired?"Clear":"Give up")+'</button></div></div>';
-    }).join(""):'<p class="empty">No quests. Send them to the tavern.</p>';
-    const spells=h.spells.map(s=>'<div class="spell"><h5>'+esc(s.name)+'</h5><p>'+esc(s.text)+'</p>'+
-      '<div class="row"><button class="cast" data-cast="'+h.id+':'+s.id+'">Cast and spend</button></div></div>').join("");
+      if(q.extra) extra=q.extra.k==="power"?L(q.extra.pw.name):L(q.extra.t);
+      return '<div class="task '+(q.expired?"expired":"")+'"><h5>'+esc(L(q.name))+'</h5>'+
+        '<div class="meta">'+(q.expired?t("expired"):t("endsAfter")+q.until)+' &middot; '+esc(L(q.reward))+
+        (extra?" &middot; "+esc(extra):"")+'</div><p>'+esc(L(q.task))+'</p>'+
+        '<div class="row">'+(q.expired?"":'<button class="done" data-done="'+h.id+':'+q.id+'">'+t("done")+'</button>')+
+        '<button data-drop="'+h.id+':'+q.id+'">'+(q.expired?t("clear"):t("giveUp"))+'</button></div></div>';
+    }).join(""):'<p class="empty">'+t("noQuests")+'</p>';
+    const spells=h.spells.map(s=>'<div class="spell"><h5>'+esc(L(s.name))+'</h5><p>'+esc(L(s.text))+'</p>'+
+      '<div class="row"><button class="cast" data-cast="'+h.id+':'+s.id+'">'+t("cast")+'</button></div></div>').join("");
     const face=FACES[h.face]||FACES[0], arms=ARMS[h.arms]||ARMS[0];
     return '<div class="hero '+(h.jailed?"jailed":"")+'">'+
       '<div class="hrow"><button class="face" data-face="'+h.id+'" title="Tap for the next face" '+
@@ -440,8 +516,8 @@ function renderRoster(){
       'aria-label="Coat of arms: '+arms.n+'. Tap for the next one">'+arms.s+'</button>'+
       '<input type="text" value="'+esc(h.name)+'" data-name="'+h.id+'" aria-label="Hero name"></div>'+
       '<div class="row"><button class="jail" data-jail="'+h.id+'" aria-pressed="'+h.jailed+'">'+
-      (h.jailed?"In the dungeon":"Dungeon")+'</button>'+
-      (heroes.length>1?'<button data-remove="'+h.id+'">Remove</button>':'')+'</div>'+
+      (h.jailed?t("inDungeon"):t("dungeon"))+'</button>'+
+      (heroes.length>1?'<button data-remove="'+h.id+'">'+t("removeHero")+'</button>':'')+'</div>'+
       quests+spells+'</div>';
   }).join("");
 
@@ -472,11 +548,11 @@ function renderRoster(){
   el.querySelectorAll("[data-done]").forEach(b=>b.onclick=()=>{
     const [h,qi]=pick(b.dataset.done);
     const q=h.quests.find(x=>x.id==qi);
-    let msg=h.name+" claims: "+q.reward;
+    let msg=h.name+t("claims")+L(q.reward);
     if(q.extra&&q.extra.k==="power"){
       h.spells.unshift({name:q.extra.pw.name,text:q.extra.pw.text,id:++pid});
-      msg+="\n\nand learns "+q.extra.pw.name+".";
-    } else if(q.extra){ msg+="\n\nand also: "+q.extra.t; }
+      msg+="\n\n"+t("learns")+L(q.extra.pw.name)+".";
+    } else if(q.extra){ msg+="\n\n"+t("also")+L(q.extra.t); }
     h.quests=h.quests.filter(x=>x.id!=qi); renderRoster(); alert(msg);
   });
 }
@@ -550,8 +626,7 @@ function drawMap(){
   const cd=(MAPCFG.craterDistance&&MAPCFG.craterDistance[diff])||4;
   const m=genMap(tiles,cd);
   const slot=$("mapSlot");
-  if(!m){ slot.innerHTML='<div class="card harsh"><p>No land of that size puts the crater '+cd+
-    ' tiles out. Change the tile count or the shape and try again.</p></div>'; return; }
+  if(!m){ slot.innerHTML='<div class="card harsh"><p>'+t("noLand")(cd)+'</p></div>'; return; }
   const S=34, xs=c=>S*Math.sqrt(3)*(c[0]+c[1]/2), ys=c=>S*1.5*c[1];
   const X=m.cells.map(xs), Y=m.cells.map(ys);
   const minX=Math.min(...X)-S*1.1, maxX=Math.max(...X)+S*1.1;
@@ -578,8 +653,7 @@ function drawMap(){
     (maxX-minX).toFixed(0)+" "+(maxY-minY).toFixed(0)+'" role="img" aria-label="Generated map of Avel">'+
     '<rect x="'+minX.toFixed(0)+'" y="'+minY.toFixed(0)+'" width="'+(maxX-minX).toFixed(0)+'" height="'+
     (maxY-minY).toFixed(0)+'" fill="#171F14"/>'+g+'</svg>'+
-    '<p class="empty">'+tiles+' tiles including the castle, '+m.starts.length+
-    ' face up around it, crater '+cd+' tiles out. Small numbers are the distance from the castle.</p>';
+    '<p class="empty">'+t("mapNote")(tiles,m.starts.length,cd)+'</p>';
 }
 
 /* ---------------- load the cards ---------------- */
@@ -596,7 +670,7 @@ async function boot(){
     tiles=defaultTiles(); $("tnum").textContent=tiles;
     if(!EVENTS.length||!QUESTS.length||!MARCH.length) throw new Error("sky, tavern or march is empty");
     buildEventDeck(); buildMarchDeck(); buildQuestDeck();
-    $("note").textContent=EVENTS.length+" sky events, "+QUESTS.length+" quests, "+MARCH.length+" omens, "+POWERS.length+" powers.";
+    $("note").textContent=t("loaded")(EVENTS.length,QUESTS.length,MARCH.length,POWERS.length);
   }catch(err){
     $("note").textContent="avel-cards.json was not read ("+err.message+"). Serve this folder over http: python3 -m http.server 8000";
   }
@@ -607,19 +681,47 @@ $("drawMarch").onclick=doMarch;
 $("askQuest").onclick=askQuest;
 $("rup").onclick=()=>setRound(round+1);
 $("rdown").onclick=()=>setRound(round-1);
-$("facePick").innerHTML='<span class="lab">Who joins?</span>'+FACES.map((f,i)=>
+$("facePick").innerHTML='<span class="lab" id="pickLab">Who joins?</span>'+FACES.map((f,i)=>
   '<button class="face" data-pick="'+i+'" aria-label="'+f.n+'">'+f.s+'</button>').join("");
 $("facePick").querySelectorAll("[data-pick]").forEach(b=>b.onclick=()=>{
-  if(heroes.length>=4){alert("Four heroes is the limit of the box.");return;}
+  if(heroes.length>=4){alert(t("fourHeroes"));return;}
   heroes.push({id:++hid,name:"Hero "+(heroes.length+1),face:+b.dataset.pick,
     arms:+b.dataset.pick%ARMS.length,jailed:false,quests:[],spells:[]});
   $("facePick").hidden=true;
   buildQuestDeck(); saveRoster(); renderRoster(); renderOffer();
 });
 $("addHero").onclick=()=>{
-  if(heroes.length>=4){alert("Four heroes is the limit of the box.");return;}
+  if(heroes.length>=4){alert(t("fourHeroes"));return;}
   $("facePick").hidden=!$("facePick").hidden;
 };
+
+/* ---------------- language ---------------- */
+function applyLang(){
+  $("sub").textContent=t("sub");
+  $("labNight").textContent=t("night"); $("labBox").textContent=t("box");
+  $("labTiles").textContent=t("tiles"); $("labShape").textContent=t("shape");
+  $("diff").querySelectorAll("button").forEach(b=>b.textContent=t(b.dataset.d));
+  $("kit").querySelectorAll("button").forEach(b=>b.textContent=t(b.dataset.k));
+  $("shape").querySelectorAll("button").forEach(b=>b.textContent=t(b.dataset.s));
+  $("tab-event").textContent=t("tabSky"); $("tab-tavern").textContent=t("tabTavern");
+  $("tab-beast").textContent=t("tabBeast"); $("tab-map").textContent=t("tabMap");
+  $("drawEvent").innerHTML=t("readSky")+'<span id="rnum2">'+round+'</span>';
+  $("askQuest").textContent=t("askInn"); $("drawMarch").textContent=t("drawOmen");
+  $("genMap").textContent=t("newLand");
+  $("roundLab").innerHTML=t("round")+' <b id="rnum">'+round+'</b>';
+  $("heroesH").textContent=t("heroes"); $("addHero").textContent=t("addHero");
+  $("pickLab").textContent=t("whoJoins");
+  $("tavernHint").textContent=t("tavernHint"); $("beastHint").textContent=t("beastHint");
+  $("mapHint").textContent=t("mapHint");
+  $("help-en").hidden=lang!=="en"; $("help-sk").hidden=lang!=="sk";
+  $("langSeg").querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.l===lang));
+}
+$("langSeg").querySelectorAll("button").forEach(b=>b.onclick=()=>{
+  lang=b.dataset.l==="sk"?"sk":"en";
+  try{localStorage.setItem("avel-nights-lang",lang);}catch(e){}
+  applyLang(); renderMoon(); renderEvent(); renderMarch(); renderOffer(); renderRoster();
+  if(EVENTS.length) $("note").textContent=t("loaded")(EVENTS.length,QUESTS.length,MARCH.length,POWERS.length);
+});
 $("genMap").onclick=drawMap;
 $("tup").onclick=()=>{tiles=Math.min(40,tiles+1);$("tnum").textContent=tiles;};
 $("tdown").onclick=()=>{tiles=Math.max(4,tiles-1);$("tnum").textContent=tiles;};
@@ -643,7 +745,7 @@ tabs.forEach(([t,v])=>$(t).onclick=()=>{
   tabs.forEach(([t2,v2])=>{$(t2).setAttribute("aria-selected",t2===t);$(v2).hidden=t2!==t;});
 });
 
-loadRoster(); renderMoon(); renderRoster(); boot();
+applyLang(); loadRoster(); renderMoon(); renderRoster(); boot();
 </script>
 </body>
 </html>

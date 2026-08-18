@@ -2,527 +2,1247 @@
   "sky": [
     {
       "tier": "boon",
-      "name": "Queen's Purse",
-      "text": "Every hero takes 1 coin from the supply."
+      "name": {
+        "en": "Queen's Purse",
+        "sk": "Kráľovnin mešec"
+      },
+      "text": {
+        "en": "Every hero takes 1 coin from the supply.",
+        "sk": "Každý hrdina si vezme 1 mincu zo zásoby."
+      }
     },
     {
       "tier": "boon",
-      "name": "Feast at the Castle",
-      "text": "Every hero heals 2 toughness markers."
+      "name": {
+        "en": "Feast at the Castle",
+        "sk": "Hostina na hrade"
+      },
+      "text": {
+        "en": "Every hero heals 2 toughness markers.",
+        "sk": "Každý hrdina si vylieči 2 žetóny odolnosti."
+      }
     },
     {
       "tier": "boon",
-      "name": "Lucky Stars",
-      "text": "Every hero rolls one green die. On an attack, take 2 coins. On a blank, heal 1 toughness."
+      "name": {
+        "en": "Lucky Stars",
+        "sk": "Šťastné hviezdy"
+      },
+      "text": {
+        "en": "Every hero rolls one green die. On an attack, take 2 coins. On a blank, heal 1 toughness.",
+        "sk": "Každý hrdina hodí jednou zelenou kockou. Za útok si vezme 2 mince. Za prázdnu stranu si vylieči 1 odolnosť."
+      }
     },
     {
       "tier": "boon",
-      "name": "Gaol Break",
-      "text": "Every hero in the dungeon walks free at once, no fee."
+      "name": {
+        "en": "Gaol Break",
+        "sk": "Útek zo žalára"
+      },
+      "text": {
+        "en": "Every hero in the dungeon walks free at once, no fee.",
+        "sk": "Každý hrdina v žalári je okamžite voľný, bez poplatku."
+      }
     },
     {
       "tier": "boon",
-      "name": "Muster of Avel",
-      "text": "Every hero rolls one green die and takes 2 coins for each attack symbol."
+      "name": {
+        "en": "Muster of Avel",
+        "sk": "Zvolanie Avelu"
+      },
+      "text": {
+        "en": "Every hero rolls one green die and takes 2 coins for each attack symbol.",
+        "sk": "Každý hrdina hodí jednou zelenou kockou a vezme si 2 mince za každý symbol útoku."
+      }
     },
     {
       "tier": "boon",
-      "name": "Moonlit Dew",
-      "text": "Every hero heals 1 toughness marker."
+      "name": {
+        "en": "Moonlit Dew",
+        "sk": "Mesačná rosa"
+      },
+      "text": {
+        "en": "Every hero heals 1 toughness marker.",
+        "sk": "Každý hrdina si vylieči 1 žetón odolnosti."
+      }
     },
     {
       "tier": "boon",
-      "name": "Forge Sparks",
-      "text": "Upgrade one item, on any hero, for free."
+      "name": {
+        "en": "Forge Sparks",
+        "sk": "Iskry z vyhne"
+      },
+      "text": {
+        "en": "Upgrade one item, on any hero, for free.",
+        "sk": "Vylepšite jeden predmet ľubovoľného hrdinu zadarmo."
+      }
     },
     {
       "tier": "boon",
-      "name": "Spirit's Gift",
-      "text": "Draw one equipment token from the bag and give it to any hero."
+      "name": {
+        "en": "Spirit's Gift",
+        "sk": "Dar ducha"
+      },
+      "text": {
+        "en": "Draw one equipment token from the bag and give it to any hero.",
+        "sk": "Vytiahnite z vrecka jeden žetón výbavy a dajte ho ľubovoľnému hrdinovi."
+      }
     },
     {
       "tier": "boon",
-      "name": "Sharpened Blades",
-      "text": "This round every hero rolls one extra green die in their first battle."
+      "name": {
+        "en": "Sharpened Blades",
+        "sk": "Nabrúsené čepele"
+      },
+      "text": {
+        "en": "This round every hero rolls one extra green die in their first battle.",
+        "sk": "Toto kolo hádže každý hrdina vo svojom prvom súboji jednu zelenú kocku navyše."
+      }
     },
     {
       "tier": "boon",
-      "name": "Second Breath",
-      "text": "One hero of your choice takes a third action this round."
+      "name": {
+        "en": "Second Breath",
+        "sk": "Druhý dych"
+      },
+      "text": {
+        "en": "One hero of your choice takes a third action this round.",
+        "sk": "Jeden hrdina podľa vášho výberu má toto kolo tretiu akciu."
+      }
     },
     {
       "tier": "boon",
-      "name": "Dwarven Discount",
-      "text": "This round the first wall or moon seal costs 1 coin instead of 3."
+      "name": {
+        "en": "Dwarven Discount",
+        "sk": "Trpasličia zľava"
+      },
+      "text": {
+        "en": "This round the first wall or moon seal costs 1 coin instead of 3.",
+        "sk": "Toto kolo stojí prvá hradba alebo mesačná pečať 1 mincu namiesto 3."
+      }
     },
     {
       "tier": "boon",
-      "name": "Old Map",
-      "text": "Reveal one face-down tile of your choice now. If it has a lair, place a monster as usual."
+      "name": {
+        "en": "Old Map",
+        "sk": "Stará mapa"
+      },
+      "text": {
+        "en": "Reveal one face-down tile of your choice now. If it has a lair, place a monster as usual.",
+        "sk": "Otočte teraz jedno zakryté políčko podľa vášho výberu. Ak je na ňom brloh, položte naň príšeru ako zvyčajne."
+      }
     },
     {
       "tier": "boon",
-      "name": "Quiet Woods",
-      "text": "This round resting restores 3 toughness markers instead of 2."
+      "name": {
+        "en": "Quiet Woods",
+        "sk": "Tiché lesy"
+      },
+      "text": {
+        "en": "This round resting restores 3 toughness markers instead of 2.",
+        "sk": "Toto kolo oddych vylieči 3 žetóny odolnosti namiesto 2."
+      }
     },
     {
       "tier": "boon",
-      "name": "Jewel Flare",
-      "text": "Put 1 damage marker on any one monster on the board."
+      "name": {
+        "en": "Jewel Flare",
+        "sk": "Záblesk klenotu"
+      },
+      "text": {
+        "en": "Put 1 damage marker on any one monster on the board.",
+        "sk": "Položte 1 žetón zranenia na ľubovoľnú príšeru na pláne."
+      }
     },
     {
       "tier": "neutral",
-      "name": "The Watch Patrol",
-      "text": "Every hero rolls one green die. Any hero who rolls no attack symbol is dragged to the castle dungeon: move their pawn to the castle. They take no actions until another hero pays 2 coins to the supply."
+      "name": {
+        "en": "The Watch Patrol",
+        "sk": "Hliadka stráže"
+      },
+      "text": {
+        "en": "Every hero rolls one green die. Any hero who rolls no attack symbol is dragged to the castle dungeon: move their pawn to the castle. They take no actions until another hero pays 2 coins to the supply.",
+        "sk": "Každý hrdina hodí jednou zelenou kockou. Koho kocka neukáže symbol útoku, toho odvlečú do hradného žalára: presuňte jeho figúrku na hrad. Nehrá, kým iný hrdina nezaplatí 2 mince do zásoby."
+      }
     },
     {
       "tier": "neutral",
-      "name": "Contest of Arms",
-      "text": "Every hero rolls 2 green dice. Whoever rolls the most attacks upgrades one item. Ties share the prize."
+      "name": {
+        "en": "Contest of Arms",
+        "sk": "Súťaž v zbrani"
+      },
+      "text": {
+        "en": "Every hero rolls 2 green dice. Whoever rolls the most attacks upgrades one item. Ties share the prize.",
+        "sk": "Každý hrdina hodí 2 zelenými kockami. Kto hodí najviac útokov, vylepší si jeden predmet. Pri remíze vyhrávajú všetci."
+      }
     },
     {
       "tier": "neutral",
-      "name": "Foot Race",
-      "text": "Every hero rolls one green die. Each hero with an attack symbol may move one tile at once, for free."
+      "name": {
+        "en": "Foot Race",
+        "sk": "Preteky"
+      },
+      "text": {
+        "en": "Every hero rolls one green die. Each hero with an attack symbol may move one tile at once, for free.",
+        "sk": "Každý hrdina hodí jednou zelenou kockou. Kto hodil symbol útoku, môže sa hneď zadarmo posunúť o jedno políčko."
+      }
     },
     {
       "tier": "neutral",
-      "name": "Tithe",
-      "text": "Every hero gives up 1 coin or 1 item, their own choice."
+      "name": {
+        "en": "Tithe",
+        "sk": "Desiatok"
+      },
+      "text": {
+        "en": "Every hero gives up 1 coin or 1 item, their own choice.",
+        "sk": "Každý hrdina odovzdá 1 mincu alebo 1 predmet, podľa vlastného výberu."
+      }
     },
     {
       "tier": "neutral",
-      "name": "Trade Winds",
-      "text": "Each hero may swap one backpack item with any other hero, no matter where they stand."
+      "name": {
+        "en": "Trade Winds",
+        "sk": "Obchodné vetry"
+      },
+      "text": {
+        "en": "Each hero may swap one backpack item with any other hero, no matter where they stand.",
+        "sk": "Každý hrdina si môže vymeniť jeden predmet z batohu s ľubovoľným iným hrdinom, nech stojí kdekoľvek."
+      }
     },
     {
       "tier": "neutral",
-      "name": "Wandering Merchant",
-      "text": "A pedlar walks the roads. This round any hero may buy an item for 3 coins wherever they stand: pay and draw from the bag."
+      "name": {
+        "en": "Wandering Merchant",
+        "sk": "Potulný kupec"
+      },
+      "text": {
+        "en": "A pedlar walks the roads. This round any hero may buy an item for 3 coins wherever they stand: pay and draw from the bag.",
+        "sk": "Po cestách chodí podomový obchodník. Toto kolo si každý hrdina môže kúpiť predmet za 3 mince, nech stojí kdekoľvek: zaplať a ťahaj z vrecka."
+      }
     },
     {
       "tier": "neutral",
-      "name": "Fog on the Hills",
-      "text": "No shortcuts this round."
+      "name": {
+        "en": "Fog on the Hills",
+        "sk": "Hmla na kopcoch"
+      },
+      "text": {
+        "en": "No shortcuts this round.",
+        "sk": "Toto kolo neplatia skratky."
+      }
     },
     {
       "tier": "neutral",
-      "name": "Wandering Spirit",
-      "text": "Roll 2 green dice. Two attacks: take 4 coins. One: take 2 coins. None: one hero loses 1 toughness."
+      "name": {
+        "en": "Wandering Spirit",
+        "sk": "Blúdiaci duch"
+      },
+      "text": {
+        "en": "Roll 2 green dice. Two attacks: take 4 coins. One: take 2 coins. None: one hero loses 1 toughness.",
+        "sk": "Hoďte 2 zelenými kockami. Dva útoky: vezmite si 4 mince. Jeden: vezmite si 2 mince. Žiadny: jeden hrdina stratí 1 odolnosť."
+      }
     },
     {
       "tier": "neutral",
-      "name": "Bargain",
-      "text": "One hero may put an item back in the bag and draw a new one."
+      "name": {
+        "en": "Bargain",
+        "sk": "Výhodná výmena"
+      },
+      "text": {
+        "en": "One hero may put an item back in the bag and draw a new one.",
+        "sk": "Jeden hrdina môže vrátiť predmet do vrecka a vytiahnuť si nový."
+      }
     },
     {
       "tier": "neutral",
-      "name": "Restless Beasts",
-      "text": "Move one small monster one tile in any direction."
+      "name": {
+        "en": "Restless Beasts",
+        "sk": "Nepokojná zver"
+      },
+      "text": {
+        "en": "Move one small monster one tile in any direction.",
+        "sk": "Posuňte jednu malú príšeru o jedno políčko ľubovoľným smerom."
+      }
     },
     {
       "tier": "mild",
-      "name": "Tax Day",
-      "text": "Every hero who has a coin pays 1 coin to the supply. Anyone who cannot pay loses 1 toughness."
+      "name": {
+        "en": "Tax Day",
+        "sk": "Deň daní"
+      },
+      "text": {
+        "en": "Every hero who has a coin pays 1 coin to the supply. Anyone who cannot pay loses 1 toughness.",
+        "sk": "Každý hrdina, ktorý má mincu, zaplatí 1 mincu do zásoby. Kto zaplatiť nemôže, stratí 1 odolnosť."
+      }
     },
     {
       "tier": "mild",
-      "name": "Sprite Plague",
-      "text": "Every hero loses 1 toughness unless they pay 1 coin to the supply."
+      "name": {
+        "en": "Sprite Plague",
+        "sk": "Pliaga škriatkov"
+      },
+      "text": {
+        "en": "Every hero loses 1 toughness unless they pay 1 coin to the supply.",
+        "sk": "Každý hrdina stratí 1 odolnosť, ak nezaplatí 1 mincu do zásoby."
+      }
     },
     {
       "tier": "mild",
-      "name": "Press Gang",
-      "text": "Every hero rolls one green die. Every hero who rolls no attack is thrown in the dungeon and stays there until another hero pays 2 coins."
+      "name": {
+        "en": "Press Gang",
+        "sk": "Verbovači"
+      },
+      "text": {
+        "en": "Every hero rolls one green die. Every hero who rolls no attack is thrown in the dungeon and stays there until another hero pays 2 coins.",
+        "sk": "Každý hrdina hodí jednou zelenou kockou. Kto nehodí útok, skončí v žalári, kým iný hrdina nezaplatí 2 mince."
+      }
     },
     {
       "tier": "mild",
-      "name": "Empty Larders",
-      "text": "No hero may rest this round. Heroes on the castle tile may still rest."
+      "name": {
+        "en": "Empty Larders",
+        "sk": "Prázdne špajze"
+      },
+      "text": {
+        "en": "No hero may rest this round. Heroes on the castle tile may still rest.",
+        "sk": "Toto kolo nesmie žiadny hrdina oddychovať. Hrdinovia na hradnom políčku oddychovať môžu."
+      }
     },
     {
       "tier": "mild",
-      "name": "Rockslide",
-      "text": "The quarry is closed this round."
+      "name": {
+        "en": "Rockslide",
+        "sk": "Zosuv skál"
+      },
+      "text": {
+        "en": "The quarry is closed this round.",
+        "sk": "Kameňolom je toto kolo zatvorený."
+      }
     },
     {
       "tier": "mild",
-      "name": "Sour Elixirs",
-      "text": "No elixirs may be drunk this round."
+      "name": {
+        "en": "Sour Elixirs",
+        "sk": "Skysnuté elixíry"
+      },
+      "text": {
+        "en": "No elixirs may be drunk this round.",
+        "sk": "Toto kolo sa nesmú piť elixíry."
+      }
     },
     {
       "tier": "mild",
-      "name": "Monster Cunning",
-      "text": "This round every monster rolls one extra purple die, if one is free."
+      "name": {
+        "en": "Monster Cunning",
+        "sk": "Prefíkané príšery"
+      },
+      "text": {
+        "en": "This round every monster rolls one extra purple die, if one is free.",
+        "sk": "Toto kolo hádže každá príšera jednu fialovú kocku navyše, ak je nejaká voľná."
+      }
     },
     {
       "tier": "mild",
-      "name": "Rusted Gear",
-      "text": "Each hero puts a used-equipment marker on one item of their choice. It cannot be used this round."
+      "name": {
+        "en": "Rusted Gear",
+        "sk": "Hrdzavá výbava"
+      },
+      "text": {
+        "en": "Each hero puts a used-equipment marker on one item of their choice. It cannot be used this round.",
+        "sk": "Každý hrdina položí žetón použitej výbavy na jeden svoj predmet podľa vlastného výberu. Toto kolo sa nedá použiť."
+      }
     },
     {
       "tier": "mild",
-      "name": "Slow Morning",
-      "text": "The starting player takes only 1 action this round."
+      "name": {
+        "en": "Slow Morning",
+        "sk": "Pomalé ráno"
+      },
+      "text": {
+        "en": "The starting player takes only 1 action this round.",
+        "sk": "Začínajúci hráč má toto kolo iba 1 akciu."
+      }
     },
     {
       "tier": "mild",
-      "name": "Creeping Dark",
-      "text": "Place one small monster on a face-up lair tile of the players' choice."
+      "name": {
+        "en": "Creeping Dark",
+        "sk": "Plazivá tma"
+      },
+      "text": {
+        "en": "Place one small monster on a face-up lair tile of the players' choice.",
+        "sk": "Položte jednu malú príšeru na odkryté políčko s brlohom podľa výberu hráčov."
+      }
     },
     {
       "tier": "mild",
-      "name": "Stolen Supplies",
-      "text": "Put one item from any backpack back in the bag. The players choose which."
+      "name": {
+        "en": "Stolen Supplies",
+        "sk": "Ukradnuté zásoby"
+      },
+      "text": {
+        "en": "Put one item from any backpack back in the bag. The players choose which.",
+        "sk": "Vráťte jeden predmet z ľubovoľného batohu do vrecka. Hráči vyberú ktorý."
+      }
     },
     {
       "tier": "mild",
-      "name": "Wounded Pride",
-      "text": "Every hero at full toughness loses 1 marker. Wounded heroes are spared."
+      "name": {
+        "en": "Wounded Pride",
+        "sk": "Ranená pýcha"
+      },
+      "text": {
+        "en": "Every hero at full toughness loses 1 marker. Wounded heroes are spared.",
+        "sk": "Každý hrdina s plnou odolnosťou stratí 1 žetón. Zranených hrdinov to obíde."
+      }
     },
     {
       "tier": "mild",
-      "name": "Shuttered Workshop",
-      "text": "The alchemist workshop is closed this round."
+      "name": {
+        "en": "Shuttered Workshop",
+        "sk": "Zavretá dielňa"
+      },
+      "text": {
+        "en": "The alchemist workshop is closed this round.",
+        "sk": "Alchymistická dielňa je toto kolo zatvorená."
+      }
     },
     {
       "tier": "mild",
-      "name": "Empty Stalls",
-      "text": "The marketplace is closed this round."
+      "name": {
+        "en": "Empty Stalls",
+        "sk": "Prázdne stánky"
+      },
+      "text": {
+        "en": "The marketplace is closed this round.",
+        "sk": "Trhovisko je toto kolo zatvorené."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Curfew of the Black Moon",
-      "text": "Every hero who ends this round on a tile with a monster loses 2 toughness."
+      "name": {
+        "en": "Curfew of the Black Moon",
+        "sk": "Zákaz Čierneho mesiaca"
+      },
+      "text": {
+        "en": "Every hero who ends this round on a tile with a monster loses 2 toughness.",
+        "sk": "Každý hrdina, ktorý skončí toto kolo na políčku s príšerou, stratí 2 odolnosti."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Highwaymen",
-      "text": "Every hero rolls one green die. Every hero with no attack symbol loses 2 coins, or an item if they have no coins."
+      "name": {
+        "en": "Highwaymen",
+        "sk": "Zbojníci"
+      },
+      "text": {
+        "en": "Every hero rolls one green die. Every hero with no attack symbol loses 2 coins, or an item if they have no coins.",
+        "sk": "Každý hrdina hodí jednou zelenou kockou. Kto nehodí symbol útoku, stratí 2 mince, alebo predmet, ak mince nemá."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Moon Shard",
-      "text": "Place one small monster on the tile nearest the castle that has no monster on it."
+      "name": {
+        "en": "Moon Shard",
+        "sk": "Úlomok mesiaca"
+      },
+      "text": {
+        "en": "Place one small monster on the tile nearest the castle that has no monster on it.",
+        "sk": "Položte jednu malú príšeru na políčko najbližšie k hradu, na ktorom nie je žiadna príšera."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Something Awakens",
-      "text": "Place one big monster on a face-up lair tile of the players' choice."
+      "name": {
+        "en": "Something Awakens",
+        "sk": "Čosi sa prebúdza"
+      },
+      "text": {
+        "en": "Place one big monster on a face-up lair tile of the players' choice.",
+        "sk": "Položte jednu veľkú príšeru na odkryté políčko s brlohom podľa výberu hráčov."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Dark Blessing",
-      "text": "Remove 1 damage marker from every wounded monster on the board."
+      "name": {
+        "en": "Dark Blessing",
+        "sk": "Temné požehnanie"
+      },
+      "text": {
+        "en": "Remove 1 damage marker from every wounded monster on the board.",
+        "sk": "Odstráňte 1 žetón zranenia z každej zranenej príšery na pláne."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Monster Fury",
-      "text": "This round every monster swaps one purple die for a black die."
+      "name": {
+        "en": "Monster Fury",
+        "sk": "Zúrivosť príšer"
+      },
+      "text": {
+        "en": "This round every monster swaps one purple die for a black die.",
+        "sk": "Toto kolo si každá príšera vymení jednu fialovú kocku za čiernu."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Broken Wall",
-      "text": "Remove one built wall marker from the game. If there are none, every hero loses 1 coin."
+      "name": {
+        "en": "Broken Wall",
+        "sk": "Prelomená hradba"
+      },
+      "text": {
+        "en": "Remove one built wall marker from the game. If there are none, every hero loses 1 coin.",
+        "sk": "Odstráňte z hry jeden postavený žetón hradby. Ak žiadny nie je, každý hrdina stratí 1 mincu."
+      }
     },
     {
       "tier": "harsh",
-      "name": "The Beast Stirs",
-      "text": "If the Beast is on the board, turn its dial up by 2. If not, every hero loses 1 coin."
+      "name": {
+        "en": "The Beast Stirs",
+        "sk": "Beštia sa hýbe"
+      },
+      "text": {
+        "en": "If the Beast is on the board, turn its dial up by 2. If not, every hero loses 1 coin.",
+        "sk": "Ak je Beštia na pláne, otočte jej počítadlo o 2 nahor. Ak nie, každý hrdina stratí 1 mincu."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Sprung Trap",
-      "text": "Remove one placed trap from the game. If there are none, no hero may rest this round."
+      "name": {
+        "en": "Sprung Trap",
+        "sk": "Spustená pasca"
+      },
+      "text": {
+        "en": "Remove one placed trap from the game. If there are none, no hero may rest this round.",
+        "sk": "Odstráňte z hry jednu položenú pascu. Ak žiadna nie je, toto kolo nesmie nikto oddychovať."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Thieves",
-      "text": "The team returns 3 coins to the supply. The players choose who pays."
+      "name": {
+        "en": "Thieves",
+        "sk": "Zlodeji"
+      },
+      "text": {
+        "en": "The team returns 3 coins to the supply. The players choose who pays.",
+        "sk": "Družina vráti 3 mince do zásoby. Hráči vyberú, kto zaplatí."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Swarm",
-      "text": "Place a small monster on every empty face-up lair tile without a moon seal."
+      "name": {
+        "en": "Swarm",
+        "sk": "Roj"
+      },
+      "text": {
+        "en": "Place a small monster on every empty face-up lair tile without a moon seal.",
+        "sk": "Položte malú príšeru na každé prázdne odkryté políčko s brlohom bez mesačnej pečate."
+      }
     },
     {
       "tier": "boon",
-      "name": "Steady Aim",
-      "text": "Every ballista on the board fires twice this round.",
+      "name": {
+        "en": "Steady Aim",
+        "sk": "Pevná muška"
+      },
+      "text": {
+        "en": "Every ballista on the board fires twice this round.",
+        "sk": "Každá balista na pláne toto kolo strieľa dvakrát."
+      },
       "toolkit": true
     },
     {
       "tier": "boon",
-      "name": "Restocked Cart",
-      "text": "Put the 3 items on the flea market back in the bag and draw 3 new ones.",
+      "name": {
+        "en": "Restocked Cart",
+        "sk": "Doplnený vozík"
+      },
+      "text": {
+        "en": "Put the 3 items on the flea market back in the bag and draw 3 new ones.",
+        "sk": "Vráťte 3 predmety z blšieho trhu do vrecka a vytiahnite 3 nové."
+      },
       "toolkit": true
     },
     {
       "tier": "boon",
-      "name": "Loyal Beasts",
-      "text": "Flip every used animal companion token back to its first side. If none were used, every hero heals 1.",
+      "name": {
+        "en": "Loyal Beasts",
+        "sk": "Verné zvieratá"
+      },
+      "text": {
+        "en": "Flip every used animal companion token back to its first side. If none were used, every hero heals 1.",
+        "sk": "Otočte všetky použité žetóny zvieracích spoločníkov späť na prvú stranu. Ak žiadne použité neboli, každý hrdina si vylieči 1."
+      },
       "toolkit": true
     },
     {
       "tier": "neutral",
-      "name": "Bargain Hunters",
-      "text": "This round a hero at the flea market may make two exchanges with one action.",
+      "name": {
+        "en": "Bargain Hunters",
+        "sk": "Lovci výhod"
+      },
+      "text": {
+        "en": "This round a hero at the flea market may make two exchanges with one action.",
+        "sk": "Toto kolo môže hrdina na blšom trhu urobiť dve výmeny za jednu akciu."
+      },
       "toolkit": true
     },
     {
       "tier": "mild",
-      "name": "Tangled Cords",
-      "text": "No ballista fires this round.",
+      "name": {
+        "en": "Tangled Cords",
+        "sk": "Zamotané povrazy"
+      },
+      "text": {
+        "en": "No ballista fires this round.",
+        "sk": "Toto kolo nestrieľa žiadna balista."
+      },
       "toolkit": true
     },
     {
       "tier": "mild",
-      "name": "Worn Soles",
-      "text": "Shoes give nothing this round, upgraded or not.",
+      "name": {
+        "en": "Worn Soles",
+        "sk": "Zodraté podrážky"
+      },
+      "text": {
+        "en": "Shoes give nothing this round, upgraded or not.",
+        "sk": "Topánky toto kolo nedávajú nič, vylepšené ani nevylepšené."
+      },
       "toolkit": true
     },
     {
       "tier": "mild",
-      "name": "Empty Cart",
-      "text": "Return one item from the flea market to the bag without replacing it.",
+      "name": {
+        "en": "Empty Cart",
+        "sk": "Prázdny vozík"
+      },
+      "text": {
+        "en": "Return one item from the flea market to the bag without replacing it.",
+        "sk": "Vráťte jeden predmet z blšieho trhu do vrecka bez náhrady."
+      },
       "toolkit": true
     },
     {
       "tier": "harsh",
-      "name": "The Daughters Whisper",
-      "text": "Envy, Greed and Wrath are listening. Every hero takes 1 damage that cannot be blocked in any way.",
+      "name": {
+        "en": "The Daughters Whisper",
+        "sk": "Šepot dcér"
+      },
+      "text": {
+        "en": "Envy, Greed and Wrath are listening. Every hero takes 1 damage that cannot be blocked in any way.",
+        "sk": "Závisť, Chamtivosť a Hnev načúvajú. Každý hrdina utrpí 1 zranenie, ktoré sa nedá nijako zablokovať."
+      },
       "toolkit": true
     }
   ],
   "tavern": [
     {
-      "name": "Wolf Bounty",
-      "task": "Defeat 2 small monsters.",
-      "reward": "4 coins"
+      "name": {
+        "en": "Wolf Bounty",
+        "sk": "Odmena za vlkov"
+      },
+      "task": {
+        "en": "Defeat 2 small monsters.",
+        "sk": "Poraz 2 malé príšery."
+      },
+      "reward": {
+        "en": "4 coins",
+        "sk": "4 mince"
+      }
     },
     {
-      "name": "The Big One",
-      "task": "Defeat a big monster.",
-      "reward": "Draw an item, then upgrade one item"
+      "name": {
+        "en": "The Big One",
+        "sk": "Ten veľký"
+      },
+      "task": {
+        "en": "Defeat a big monster.",
+        "sk": "Poraz veľkú príšeru."
+      },
+      "reward": {
+        "en": "Draw an item, then upgrade one item",
+        "sk": "Ťahaj predmet a potom jeden predmet vylepši"
+      }
     },
     {
-      "name": "Marked Prey",
-      "task": "Point at any monster on the board now. Defeat that one.",
-      "reward": "3 coins and an item"
+      "name": {
+        "en": "Marked Prey",
+        "sk": "Označená korisť"
+      },
+      "task": {
+        "en": "Point at any monster on the board now. Defeat that one.",
+        "sk": "Ukáž teraz na ľubovoľnú príšeru na pláne. Poraz práve tú."
+      },
+      "reward": {
+        "en": "3 coins and an item",
+        "sk": "3 mince a predmet"
+      }
     },
     {
-      "name": "Cartographer",
-      "task": "Reveal 2 new tiles.",
-      "reward": "3 coins"
+      "name": {
+        "en": "Cartographer",
+        "sk": "Kartograf"
+      },
+      "task": {
+        "en": "Reveal 2 new tiles.",
+        "sk": "Odkry 2 nové políčka."
+      },
+      "reward": {
+        "en": "3 coins",
+        "sk": "3 mince"
+      }
     },
     {
-      "name": "Deep Scout",
-      "task": "Be the hero furthest from the castle when a round ends.",
-      "reward": "Draw an item"
+      "name": {
+        "en": "Deep Scout",
+        "sk": "Prieskumník"
+      },
+      "task": {
+        "en": "Be the hero furthest from the castle when a round ends.",
+        "sk": "Buď na konci kola hrdinom najďalej od hradu."
+      },
+      "reward": {
+        "en": "Draw an item",
+        "sk": "Ťahaj predmet"
+      }
     },
     {
-      "name": "Stonework",
-      "task": "Build a wall at the quarry.",
-      "reward": "3 coins back"
+      "name": {
+        "en": "Stonework",
+        "sk": "Kamenárčina"
+      },
+      "task": {
+        "en": "Build a wall at the quarry.",
+        "sk": "Postav hradbu v kameňolome."
+      },
+      "reward": {
+        "en": "3 coins back",
+        "sk": "3 mince späť"
+      }
     },
     {
-      "name": "Locksmith",
-      "task": "Seal a lair at the stone circles.",
-      "reward": "3 coins back"
+      "name": {
+        "en": "Locksmith",
+        "sk": "Zámočník"
+      },
+      "task": {
+        "en": "Seal a lair at the stone circles.",
+        "sk": "Zapečať brloh pri kamenných kruhoch."
+      },
+      "reward": {
+        "en": "3 coins back",
+        "sk": "3 mince späť"
+      }
     },
     {
-      "name": "Trapper",
-      "task": "Set a trap at the elven camp.",
-      "reward": "Upgrade one item"
+      "name": {
+        "en": "Trapper",
+        "sk": "Traper"
+      },
+      "task": {
+        "en": "Set a trap at the elven camp.",
+        "sk": "Polož pascu v elfskom tábore."
+      },
+      "reward": {
+        "en": "Upgrade one item",
+        "sk": "Vylepši jeden predmet"
+      }
     },
     {
-      "name": "Alchemy Lesson",
-      "task": "Upgrade an item at the alchemist workshop.",
-      "reward": "2 coins and heal 2"
+      "name": {
+        "en": "Alchemy Lesson",
+        "sk": "Hodina alchýmie"
+      },
+      "task": {
+        "en": "Upgrade an item at the alchemist workshop.",
+        "sk": "Vylepši predmet v alchymistickej dielni."
+      },
+      "reward": {
+        "en": "2 coins and heal 2",
+        "sk": "2 mince a vylieč si 2"
+      }
     },
     {
-      "name": "Lake Offering",
-      "task": "Make an offering at the wishing lake.",
-      "reward": "2 coins, whatever the dice say"
+      "name": {
+        "en": "Lake Offering",
+        "sk": "Obeta jazeru"
+      },
+      "task": {
+        "en": "Make an offering at the wishing lake.",
+        "sk": "Prines obetu pri jazere želaní."
+      },
+      "reward": {
+        "en": "2 coins, whatever the dice say",
+        "sk": "2 mince, nech kocky povedia čokoľvek"
+      }
     },
     {
-      "name": "Courier",
-      "task": "Come back to the castle from at least two tiles away carrying 4 or more coins. You keep them.",
-      "reward": "Draw an item"
+      "name": {
+        "en": "Courier",
+        "sk": "Posol"
+      },
+      "task": {
+        "en": "Come back to the castle from at least two tiles away carrying 4 or more coins. You keep them.",
+        "sk": "Vráť sa na hrad aspoň z dvoch políčok diaľky so 4 alebo viac mincami. Ostanú ti."
+      },
+      "reward": {
+        "en": "Draw an item",
+        "sk": "Ťahaj predmet"
+      }
     },
     {
-      "name": "Brave Heart",
-      "task": "Win a battle with 2 or fewer toughness markers left.",
-      "reward": "Heal to full and draw an item"
+      "name": {
+        "en": "Brave Heart",
+        "sk": "Odvážne srdce"
+      },
+      "task": {
+        "en": "Win a battle with 2 or fewer toughness markers left.",
+        "sk": "Vyhraj súboj s 2 alebo menej žetónmi odolnosti."
+      },
+      "reward": {
+        "en": "Heal to full and draw an item",
+        "sk": "Vylieč sa naplno a ťahaj predmet"
+      }
     },
     {
-      "name": "Clean Sweep",
-      "task": "End a round with no monster on any tile touching the castle.",
-      "reward": "4 coins"
+      "name": {
+        "en": "Clean Sweep",
+        "sk": "Veľké upratovanie"
+      },
+      "task": {
+        "en": "End a round with no monster on any tile touching the castle.",
+        "sk": "Skonči kolo bez príšery na políčkach dotýkajúcich sa hradu."
+      },
+      "reward": {
+        "en": "4 coins",
+        "sk": "4 mince"
+      }
     },
     {
-      "name": "Toolsmith",
-      "task": "Wear a weapon, a shield and a helmet at the same time.",
-      "reward": "Upgrade one of them"
+      "name": {
+        "en": "Toolsmith",
+        "sk": "Zbrojár"
+      },
+      "task": {
+        "en": "Wear a weapon, a shield and a helmet at the same time.",
+        "sk": "Maj naraz oblečenú zbraň, štít aj prilbu."
+      },
+      "reward": {
+        "en": "Upgrade one of them",
+        "sk": "Jedno z nich si vylepši"
+      }
     },
     {
-      "name": "Elixir Run",
-      "task": "Carry 2 elixirs in your backpack at once.",
-      "reward": "3 coins"
+      "name": {
+        "en": "Elixir Run",
+        "sk": "Elixírová výprava"
+      },
+      "task": {
+        "en": "Carry 2 elixirs in your backpack at once.",
+        "sk": "Nos naraz 2 elixíry v batohu."
+      },
+      "reward": {
+        "en": "3 coins",
+        "sk": "3 mince"
+      }
     },
     {
-      "name": "Trophy Hunt",
-      "task": "Defeat a monster without losing a single toughness marker.",
-      "reward": "Draw an item"
+      "name": {
+        "en": "Trophy Hunt",
+        "sk": "Lov na trofej"
+      },
+      "task": {
+        "en": "Defeat a monster without losing a single toughness marker.",
+        "sk": "Poraz príšeru bez straty jediného žetónu odolnosti."
+      },
+      "reward": {
+        "en": "Draw an item",
+        "sk": "Ťahaj predmet"
+      }
     },
     {
-      "name": "Salvage",
-      "task": "Sell an item at the marketplace.",
-      "reward": "Draw an item for free"
+      "name": {
+        "en": "Salvage",
+        "sk": "Výpredaj"
+      },
+      "task": {
+        "en": "Sell an item at the marketplace.",
+        "sk": "Predaj predmet na trhovisku."
+      },
+      "reward": {
+        "en": "Draw an item for free",
+        "sk": "Ťahaj predmet zadarmo"
+      }
     },
     {
-      "name": "Nightwatch",
-      "task": "Spend a whole turn, both actions, on the castle tile.",
-      "reward": "Heal to full and take 2 coins"
+      "name": {
+        "en": "Nightwatch",
+        "sk": "Nočná hliadka"
+      },
+      "task": {
+        "en": "Spend a whole turn, both actions, on the castle tile.",
+        "sk": "Stráv celý ťah, obe akcie, na hradnom políčku."
+      },
+      "reward": {
+        "en": "Heal to full and take 2 coins",
+        "sk": "Vylieč sa naplno a vezmi si 2 mince"
+      }
     },
     {
-      "name": "Merchant's Favour",
-      "task": "Buy something at the marketplace.",
-      "reward": "2 coins back"
+      "name": {
+        "en": "Merchant's Favour",
+        "sk": "Kupcova priazeň"
+      },
+      "task": {
+        "en": "Buy something at the marketplace.",
+        "sk": "Kúp niečo na trhovisku."
+      },
+      "reward": {
+        "en": "2 coins back",
+        "sk": "2 mince späť"
+      }
     },
     {
-      "name": "Pathfinder",
-      "task": "Travel by shortcut.",
-      "reward": "3 coins"
+      "name": {
+        "en": "Pathfinder",
+        "sk": "Stopár"
+      },
+      "task": {
+        "en": "Travel by shortcut.",
+        "sk": "Cestuj skratkou."
+      },
+      "reward": {
+        "en": "3 coins",
+        "sk": "3 mince"
+      }
     },
     {
-      "name": "Empty Lair",
-      "task": "Stand on a lair tile with no monster on it when a round ends.",
-      "reward": "2 coins"
+      "name": {
+        "en": "Empty Lair",
+        "sk": "Prázdny brloh"
+      },
+      "task": {
+        "en": "Stand on a lair tile with no monster on it when a round ends.",
+        "sk": "Stoj na konci kola na políčku s brlohom bez príšery."
+      },
+      "reward": {
+        "en": "2 coins",
+        "sk": "2 mince"
+      }
     },
     {
-      "name": "Gaoler's Errand",
-      "task": "Pay the fee to free a hero from the dungeon.",
-      "reward": "3 coins back"
+      "name": {
+        "en": "Gaoler's Errand",
+        "sk": "Žalárnikova pochôdzka"
+      },
+      "task": {
+        "en": "Pay the fee to free a hero from the dungeon.",
+        "sk": "Zaplať poplatok a vysloboď hrdinu zo žalára."
+      },
+      "reward": {
+        "en": "3 coins back",
+        "sk": "3 mince späť"
+      }
     },
     {
-      "name": "Last Stand",
-      "task": "Fight the Beast at least once. Only after the Black Moon has risen.",
-      "reward": "Heal 2 and take 3 coins"
+      "name": {
+        "en": "Last Stand",
+        "sk": "Posledný vzdor"
+      },
+      "task": {
+        "en": "Fight the Beast at least once. Only after the Black Moon has risen.",
+        "sk": "Bojuj s Beštiou aspoň raz. Až po východe Čierneho mesiaca."
+      },
+      "reward": {
+        "en": "Heal 2 and take 3 coins",
+        "sk": "Vylieč si 2 a vezmi si 3 mince"
+      }
     },
     {
-      "name": "Helping Hands",
-      "task": "End a round on the same tile as another hero, not the castle.",
-      "reward": "Both heal 2",
+      "name": {
+        "en": "Helping Hands",
+        "sk": "Pomocné ruky"
+      },
+      "task": {
+        "en": "End a round on the same tile as another hero, not the castle.",
+        "sk": "Skonči kolo na rovnakom políčku ako iný hrdina, nie na hrade."
+      },
+      "reward": {
+        "en": "Both heal 2",
+        "sk": "Obaja si vyliečite 2"
+      },
       "team": true
     },
     {
-      "name": "Generous Hero",
-      "task": "Give an item or a coin to another hero.",
-      "reward": "You both take 1 coin",
+      "name": {
+        "en": "Generous Hero",
+        "sk": "Štedrý hrdina"
+      },
+      "task": {
+        "en": "Give an item or a coin to another hero.",
+        "sk": "Daj predmet alebo mincu inému hrdinovi."
+      },
+      "reward": {
+        "en": "You both take 1 coin",
+        "sk": "Obaja si vezmete 1 mincu"
+      },
       "team": true
     },
     {
-      "name": "Monster Slayer",
-      "task": "The team defeats 3 monsters in one round.",
-      "reward": "Draw 2 items for anyone",
+      "name": {
+        "en": "Monster Slayer",
+        "sk": "Zabijak príšer"
+      },
+      "task": {
+        "en": "The team defeats 3 monsters in one round.",
+        "sk": "Družina porazí 3 príšery v jednom kole."
+      },
+      "reward": {
+        "en": "Draw 2 items for anyone",
+        "sk": "Ťahajte 2 predmety pre kohokoľvek"
+      },
       "team": true
     },
     {
-      "name": "Trouble at the Quarry",
-      "task": "A small monster has settled in the quarry and the masons have downed tools. Draw a small monster, put it on the quarry, and drive it off.",
-      "reward": "The monster's own loot, plus one wall built for free",
+      "name": {
+        "en": "Trouble at the Quarry",
+        "sk": "Nepokoj v kameňolome"
+      },
+      "task": {
+        "en": "A small monster has settled in the quarry and the masons have downed tools. Draw a small monster, put it on the quarry, and drive it off.",
+        "sk": "V kameňolome sa usadila malá príšera a murári zložili náradie. Ťahaj malú príšeru, polož ju na kameňolom a vyžeň ju."
+      },
+      "reward": {
+        "en": "The monster's own loot, plus one wall built for free",
+        "sk": "Korisť príšery a k tomu jedna hradba postavená zadarmo"
+      },
       "invasion": true
     },
     {
-      "name": "The Elven Camp Burns",
-      "task": "A big monster is loose in the elven camp. Draw a big monster, put it on the camp, and defeat it.",
-      "reward": "The monster's own loot, plus one trap set for free",
+      "name": {
+        "en": "The Elven Camp Burns",
+        "sk": "Elfský tábor horí"
+      },
+      "task": {
+        "en": "A big monster is loose in the elven camp. Draw a big monster, put it on the camp, and defeat it.",
+        "sk": "V elfskom tábore vyčíňa veľká príšera. Ťahaj veľkú príšeru, polož ju na tábor a poraz ju."
+      },
+      "reward": {
+        "en": "The monster's own loot, plus one trap set for free",
+        "sk": "Korisť príšery a k tomu jedna pasca položená zadarmo"
+      },
       "invasion": true
     },
     {
-      "name": "Circle of Broken Stones",
-      "task": "Something squats in the stone circles and Theodore cannot work. Draw a small monster, put it there, and clear it out.",
-      "reward": "The monster's own loot, plus one moon seal for free",
+      "name": {
+        "en": "Circle of Broken Stones",
+        "sk": "Kruh zlomených kameňov"
+      },
+      "task": {
+        "en": "Something squats in the stone circles and Theodore cannot work. Draw a small monster, put it there, and clear it out.",
+        "sk": "V kamenných kruhoch sa čosi usadilo a Theodore nemôže pracovať. Ťahaj malú príšeru, polož ju tam a vyčisti to."
+      },
+      "reward": {
+        "en": "The monster's own loot, plus one moon seal for free",
+        "sk": "Korisť príšery a k tomu jedna mesačná pečať zadarmo"
+      },
       "invasion": true
     },
     {
-      "name": "Fire in the Workshop",
-      "task": "A small monster is drinking Master Vial's elixirs. Draw a small monster, put it on the alchemist workshop, and stop it.",
-      "reward": "The monster's own loot, plus 2 free upgrades",
+      "name": {
+        "en": "Fire in the Workshop",
+        "sk": "Požiar v dielni"
+      },
+      "task": {
+        "en": "A small monster is drinking Master Vial's elixirs. Draw a small monster, put it on the alchemist workshop, and stop it.",
+        "sk": "Malá príšera vypíja elixíry majstra Viala. Ťahaj malú príšeru, polož ju na alchymistickú dielňu a zastav ju."
+      },
+      "reward": {
+        "en": "The monster's own loot, plus 2 free upgrades",
+        "sk": "Korisť príšery a k tomu 2 vylepšenia zadarmo"
+      },
       "invasion": true
     },
     {
-      "name": "Market Day Ruined",
-      "task": "A big monster is eating the stalls. Draw a big monster, put it on the marketplace, and deal with it.",
-      "reward": "The monster's own loot, plus one free item from the bag",
+      "name": {
+        "en": "Market Day Ruined",
+        "sk": "Skazený trhový deň"
+      },
+      "task": {
+        "en": "A big monster is eating the stalls. Draw a big monster, put it on the marketplace, and deal with it.",
+        "sk": "Veľká príšera žerie stánky. Ťahaj veľkú príšeru, polož ju na trhovisko a vysporiadaj sa s ňou."
+      },
+      "reward": {
+        "en": "The monster's own loot, plus one free item from the bag",
+        "sk": "Korisť príšery a k tomu jeden predmet z vrecka zadarmo"
+      },
       "invasion": true
     },
     {
-      "name": "Something in the Lake",
-      "task": "The water spirits have gone quiet. Draw a small monster, put it on the wishing lake, and beat it.",
-      "reward": "The monster's own loot, plus 4 coins",
+      "name": {
+        "en": "Something in the Lake",
+        "sk": "Čosi v jazere"
+      },
+      "task": {
+        "en": "The water spirits have gone quiet. Draw a small monster, put it on the wishing lake, and beat it.",
+        "sk": "Vodní duchovia stíchli. Ťahaj malú príšeru, polož ju na jazero želaní a zdolaj ju."
+      },
+      "reward": {
+        "en": "The monster's own loot, plus 4 coins",
+        "sk": "Korisť príšery a k tomu 4 mince"
+      },
       "invasion": true
     },
     {
-      "name": "Wall Crawler",
-      "task": "A small monster is picking at the castle walls. Draw a small monster and put it on a tile touching the castle. Defeat it before the round after next, or it takes a wall marker with it.",
-      "reward": "The monster's own loot, plus 3 coins",
+      "name": {
+        "en": "Wall Crawler",
+        "sk": "Plazivec na hradbách"
+      },
+      "task": {
+        "en": "A small monster is picking at the castle walls. Draw a small monster and put it on a tile touching the castle. Defeat it before the round after next, or it takes a wall marker with it.",
+        "sk": "Malá príšera rozoberá hradné múry. Ťahaj malú príšeru a polož ju na políčko dotýkajúce sa hradu. Poraz ju do konca nasledujúceho kola, inak si odnesie jeden žetón hradby."
+      },
+      "reward": {
+        "en": "The monster's own loot, plus 3 coins",
+        "sk": "Korisť príšery a k tomu 3 mince"
+      },
       "invasion": true
     },
     {
-      "name": "The Sleeping Giant",
-      "task": "A big monster blocks the abandoned village. Draw a big monster, put it there, and defeat it.",
-      "reward": "The monster's own loot, plus an item and an upgrade",
+      "name": {
+        "en": "The Sleeping Giant",
+        "sk": "Spiaci obor"
+      },
+      "task": {
+        "en": "A big monster blocks the abandoned village. Draw a big monster, put it there, and defeat it.",
+        "sk": "Veľká príšera blokuje opustenú dedinu. Ťahaj veľkú príšeru, polož ju tam a poraz ju."
+      },
+      "reward": {
+        "en": "The monster's own loot, plus an item and an upgrade",
+        "sk": "Korisť príšery a k tomu predmet a vylepšenie"
+      },
       "invasion": true
     },
     {
-      "name": "Siege Engineer",
-      "task": "Buy a ballista at the dwarven workshop.",
-      "reward": "3 coins back",
+      "name": {
+        "en": "Siege Engineer",
+        "sk": "Obliehací inžinier"
+      },
+      "task": {
+        "en": "Buy a ballista at the dwarven workshop.",
+        "sk": "Kúp balistu v trpasličej dielni."
+      },
+      "reward": {
+        "en": "3 coins back",
+        "sk": "3 mince späť"
+      },
       "toolkit": true
     },
     {
-      "name": "Gunner's Pride",
-      "task": "Let a ballista land the killing shot on a monster.",
-      "reward": "4 coins",
+      "name": {
+        "en": "Gunner's Pride",
+        "sk": "Strelcova pýcha"
+      },
+      "task": {
+        "en": "Let a ballista land the killing shot on a monster.",
+        "sk": "Nech balista zasadí príšere posledný úder."
+      },
+      "reward": {
+        "en": "4 coins",
+        "sk": "4 mince"
+      },
       "toolkit": true
     },
     {
-      "name": "Horse Trader",
-      "task": "Exchange an item at the flea market.",
-      "reward": "2 coins and one upgrade",
+      "name": {
+        "en": "Horse Trader",
+        "sk": "Priekupník"
+      },
+      "task": {
+        "en": "Exchange an item at the flea market.",
+        "sk": "Vymeň predmet na blšom trhu."
+      },
+      "reward": {
+        "en": "2 coins and one upgrade",
+        "sk": "2 mince a jedno vylepšenie"
+      },
       "toolkit": true
     },
     {
-      "name": "Harvest Hand",
-      "task": "Take the coins at the fields and forests.",
-      "reward": "Draw an item",
+      "name": {
+        "en": "Harvest Hand",
+        "sk": "Pomocník pri žatve"
+      },
+      "task": {
+        "en": "Take the coins at the fields and forests.",
+        "sk": "Vezmi si mince na poliach a lesoch."
+      },
+      "reward": {
+        "en": "Draw an item",
+        "sk": "Ťahaj predmet"
+      },
       "toolkit": true
     },
     {
-      "name": "Tamer",
-      "task": "Defeat one of the Three Daughters.",
-      "reward": "4 coins and one upgrade",
+      "name": {
+        "en": "Tamer",
+        "sk": "Krotiteľ"
+      },
+      "task": {
+        "en": "Defeat one of the Three Daughters.",
+        "sk": "Poraz jednu z Troch dcér."
+      },
+      "reward": {
+        "en": "4 coins and one upgrade",
+        "sk": "4 mince a jedno vylepšenie"
+      },
       "toolkit": true
     },
     {
-      "name": "Well Shod",
-      "task": "Wear a pair of upgraded shoes.",
-      "reward": "3 coins",
+      "name": {
+        "en": "Well Shod",
+        "sk": "Dobre obutý"
+      },
+      "task": {
+        "en": "Wear a pair of upgraded shoes.",
+        "sk": "Maj obuté vylepšené topánky."
+      },
+      "reward": {
+        "en": "3 coins",
+        "sk": "3 mince"
+      },
       "toolkit": true
     },
     {
-      "name": "Trouble at the Flea Market",
-      "task": "A big monster is rifling through the cart. Draw a big monster, put it on the flea market, and drive it off.",
-      "reward": "The monster's own loot, plus a free exchange and 3 coins",
+      "name": {
+        "en": "Trouble at the Flea Market",
+        "sk": "Nepokoj na blšom trhu"
+      },
+      "task": {
+        "en": "A big monster is rifling through the cart. Draw a big monster, put it on the flea market, and drive it off.",
+        "sk": "Veľká príšera sa prehrabuje vo vozíku. Ťahaj veľkú príšeru, polož ju na blší trh a vyžeň ju."
+      },
+      "reward": {
+        "en": "The monster's own loot, plus a free exchange and 3 coins",
+        "sk": "Korisť príšery a k tomu výmena zadarmo a 3 mince"
+      },
       "invasion": true,
       "toolkit": true
     },
     {
-      "name": "Winches and Teeth",
-      "task": "A small monster is loose in the dwarven workshop. Draw a small monster, put it there, and clear it out.",
-      "reward": "The monster's own loot, plus 2 coins off your next ballista",
+      "name": {
+        "en": "Winches and Teeth",
+        "sk": "Kladky a zuby"
+      },
+      "task": {
+        "en": "A small monster is loose in the dwarven workshop. Draw a small monster, put it there, and clear it out.",
+        "sk": "V trpasličej dielni vyčíňa malá príšera. Ťahaj malú príšeru, polož ju tam a vyčisti to."
+      },
+      "reward": {
+        "en": "The monster's own loot, plus 2 coins off your next ballista",
+        "sk": "Korisť príšery a k tomu 2 mince zľava na tvoju ďalšiu balistu"
+      },
       "invasion": true,
       "toolkit": true
     }
@@ -530,256 +1250,586 @@
   "march": [
     {
       "tier": "boon",
-      "name": "The Masons Return",
-      "text": "Build one wall for free, if a wall marker is still in the box."
+      "name": {
+        "en": "The Masons Return",
+        "sk": "Murári sa vracajú"
+      },
+      "text": {
+        "en": "Build one wall for free, if a wall marker is still in the box.",
+        "sk": "Postavte jednu hradbu zadarmo, ak je v škatuli ešte žetón hradby."
+      }
     },
     {
       "tier": "boon",
-      "name": "Holy Ground",
-      "text": "Choose one monster. It does not move at the end of this round."
+      "name": {
+        "en": "Holy Ground",
+        "sk": "Svätá zem"
+      },
+      "text": {
+        "en": "Choose one monster. It does not move at the end of this round.",
+        "sk": "Vyberte jednu príšeru. Na konci tohto kola sa nepohne."
+      }
     },
     {
       "tier": "boon",
-      "name": "Frozen Claws",
-      "text": "The Beast does not move at the end of this round."
+      "name": {
+        "en": "Frozen Claws",
+        "sk": "Zmrznuté pazúry"
+      },
+      "text": {
+        "en": "The Beast does not move at the end of this round.",
+        "sk": "Beštia sa na konci tohto kola nepohne."
+      }
     },
     {
       "tier": "boon",
-      "name": "Rallying Cry",
-      "text": "This round every hero rolls one extra orange die in every battle."
+      "name": {
+        "en": "Rallying Cry",
+        "sk": "Bojový pokrik"
+      },
+      "text": {
+        "en": "This round every hero rolls one extra orange die in every battle.",
+        "sk": "Toto kolo hádže každý hrdina v každom súboji jednu oranžovú kocku navyše."
+      }
     },
     {
       "tier": "boon",
-      "name": "Sharpened Stakes",
-      "text": "The next trap to trigger deals 2 extra damage."
+      "name": {
+        "en": "Sharpened Stakes",
+        "sk": "Zaostrené koly"
+      },
+      "text": {
+        "en": "The next trap to trigger deals 2 extra damage.",
+        "sk": "Najbližšia pasca, ktorá sa spustí, spôsobí 2 zranenia navyše."
+      }
     },
     {
       "tier": "neutral",
-      "name": "Echoing Horn",
-      "text": "This round you may reroll one monster die in each battle."
+      "name": {
+        "en": "Echoing Horn",
+        "sk": "Ozvena rohu"
+      },
+      "text": {
+        "en": "This round you may reroll one monster die in each battle.",
+        "sk": "Toto kolo môžete v každom súboji raz prehodiť jednu kocku príšery."
+      }
     },
     {
       "tier": "neutral",
-      "name": "Crooked Paths",
-      "text": "This round the players choose each monster's path even when it is not the shortest, as long as every monster still ends up closer to the castle."
+      "name": {
+        "en": "Crooked Paths",
+        "sk": "Krivé cesty"
+      },
+      "text": {
+        "en": "This round the players choose each monster's path even when it is not the shortest, as long as every monster still ends up closer to the castle.",
+        "sk": "Toto kolo vyberajú cestu každej príšery hráči, aj keď nie je najkratšia, pokiaľ každá príšera skončí bližšie k hradu."
+      }
     },
     {
       "tier": "mild",
-      "name": "Traps Jam",
-      "text": "Traps do nothing this round."
+      "name": {
+        "en": "Traps Jam",
+        "sk": "Zaseknuté pasce"
+      },
+      "text": {
+        "en": "Traps do nothing this round.",
+        "sk": "Pasce toto kolo nefungujú."
+      }
     },
     {
       "tier": "mild",
-      "name": "Blunted Blades",
-      "text": "This round each hero rolls one fewer die of their choice, never going below 2 green dice."
+      "name": {
+        "en": "Blunted Blades",
+        "sk": "Otupené čepele"
+      },
+      "text": {
+        "en": "This round each hero rolls one fewer die of their choice, never going below 2 green dice.",
+        "sk": "Toto kolo hádže každý hrdina o jednu kocku menej podľa vlastného výberu, nikdy však pod 2 zelené kocky."
+      }
     },
     {
       "tier": "mild",
-      "name": "No Rest for the Brave",
-      "text": "No hero may rest this round."
+      "name": {
+        "en": "No Rest for the Brave",
+        "sk": "Odvážni nespia"
+      },
+      "text": {
+        "en": "No hero may rest this round.",
+        "sk": "Toto kolo nesmie žiadny hrdina oddychovať."
+      }
     },
     {
       "tier": "mild",
-      "name": "Dark Chorus",
-      "text": "This round every monster rolls one extra purple die, if one is free."
+      "name": {
+        "en": "Dark Chorus",
+        "sk": "Temný chór"
+      },
+      "text": {
+        "en": "This round every monster rolls one extra purple die, if one is free.",
+        "sk": "Toto kolo hádže každá príšera jednu fialovú kocku navyše, ak je nejaká voľná."
+      }
     },
     {
       "tier": "mild",
-      "name": "Choked Roads",
-      "text": "No shortcuts this round, for heroes or monsters."
+      "name": {
+        "en": "Choked Roads",
+        "sk": "Zatarasené cesty"
+      },
+      "text": {
+        "en": "No shortcuts this round, for heroes or monsters.",
+        "sk": "Toto kolo neplatia skratky, pre hrdinov ani pre príšery."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Double March",
-      "text": "Every small monster moves 1 extra tile at the end of this round, unless that move would take it onto the castle tile."
+      "name": {
+        "en": "Double March",
+        "sk": "Dvojitý pochod"
+      },
+      "text": {
+        "en": "Every small monster moves 1 extra tile at the end of this round, unless that move would take it onto the castle tile.",
+        "sk": "Každá malá príšera sa na konci tohto kola pohne o 1 políčko navyše, pokiaľ by tým nevstúpila na hradné políčko."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Forced March",
-      "text": "Every big monster and the Beast move 1 extra tile at the end of this round, unless that move would take them onto the castle tile."
+      "name": {
+        "en": "Forced March",
+        "sk": "Nútený pochod"
+      },
+      "text": {
+        "en": "Every big monster and the Beast move 1 extra tile at the end of this round, unless that move would take them onto the castle tile.",
+        "sk": "Každá veľká príšera aj Beštia sa na konci tohto kola pohnú o 1 políčko navyše, pokiaľ by tým nevstúpili na hradné políčko."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Beast Rage",
-      "text": "Turn the Beast's dial up by 4."
+      "name": {
+        "en": "Beast Rage",
+        "sk": "Zúrivosť Beštie"
+      },
+      "text": {
+        "en": "Turn the Beast's dial up by 4.",
+        "sk": "Otočte počítadlo Beštie o 4 nahor."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Shattered Astrolabe",
-      "text": "Every hero takes only 1 action this round."
+      "name": {
+        "en": "Shattered Astrolabe",
+        "sk": "Roztrieštený astroláb"
+      },
+      "text": {
+        "en": "Every hero takes only 1 action this round.",
+        "sk": "Každý hrdina má toto kolo iba 1 akciu."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Black Rain",
-      "text": "Every hero loses 1 toughness now and no hero may rest this round."
+      "name": {
+        "en": "Black Rain",
+        "sk": "Čierny dážď"
+      },
+      "text": {
+        "en": "Every hero loses 1 toughness now and no hero may rest this round.",
+        "sk": "Každý hrdina hneď stratí 1 odolnosť a toto kolo nesmie nikto oddychovať."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Cracked Mortar",
-      "text": "The next monster to strike the walls destroys 2 wall markers instead of 1."
+      "name": {
+        "en": "Cracked Mortar",
+        "sk": "Popraskaná malta"
+      },
+      "text": {
+        "en": "The next monster to strike the walls destroys 2 wall markers instead of 1.",
+        "sk": "Najbližšia príšera, ktorá udrie na hradby, zničí 2 žetóny hradieb namiesto 1."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Wall Breach",
-      "text": "Remove one built wall marker from the game. If there are none, turn the Beast's dial up by 3."
+      "name": {
+        "en": "Wall Breach",
+        "sk": "Prielom v hradbách"
+      },
+      "text": {
+        "en": "Remove one built wall marker from the game. If there are none, turn the Beast's dial up by 3.",
+        "sk": "Odstráňte z hry jeden postavený žetón hradby. Ak žiadny nie je, otočte počítadlo Beštie o 3 nahor."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Iron Hide",
-      "text": "This round the first 2 damage markers that would go on the Beast in each battle are ignored."
+      "name": {
+        "en": "Iron Hide",
+        "sk": "Železná koža"
+      },
+      "text": {
+        "en": "This round the first 2 damage markers that would go on the Beast in each battle are ignored.",
+        "sk": "Toto kolo sa prvé 2 žetóny zranenia, ktoré by v každom súboji dostala Beštia, nepočítajú."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Blind Fury",
-      "text": "This round every monster swaps all of its purple dice for black dice, as far as the dice allow."
+      "name": {
+        "en": "Blind Fury",
+        "sk": "Slepá zúrivosť"
+      },
+      "text": {
+        "en": "This round every monster swaps all of its purple dice for black dice, as far as the dice allow.",
+        "sk": "Toto kolo si každá príšera vymení všetky fialové kocky za čierne, pokiaľ kocky stačia."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Shattered Seal",
-      "text": "Remove one moon seal from the board and place a small monster on that lair."
+      "name": {
+        "en": "Shattered Seal",
+        "sk": "Zlomená pečať"
+      },
+      "text": {
+        "en": "Remove one moon seal from the board and place a small monster on that lair.",
+        "sk": "Odstráňte z plánu jednu mesačnú pečať a na ten brloh položte malú príšeru."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Swallowing Dark",
-      "text": "Remove one placed trap and one moon seal from the game."
+      "name": {
+        "en": "Swallowing Dark",
+        "sk": "Pohlcujúca tma"
+      },
+      "text": {
+        "en": "Remove one placed trap and one moon seal from the game.",
+        "sk": "Odstráňte z hry jednu položenú pascu a jednu mesačnú pečať."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Crater Bloom",
-      "text": "Place 2 small monsters three tiles from the castle."
+      "name": {
+        "en": "Crater Bloom",
+        "sk": "Kráter kvitne"
+      },
+      "text": {
+        "en": "Place 2 small monsters three tiles from the castle.",
+        "sk": "Položte 2 malé príšery tri políčka od hradu."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Beast's Roar",
-      "text": "Every hero within two tiles of the Beast is pushed one tile away from it. The players choose the direction."
+      "name": {
+        "en": "Beast's Roar",
+        "sk": "Rev Beštie"
+      },
+      "text": {
+        "en": "Every hero within two tiles of the Beast is pushed one tile away from it. The players choose the direction.",
+        "sk": "Každý hrdina do dvoch políčok od Beštie je odtlačený o jedno políčko ďalej od nej. Smer vyberú hráči."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Terror",
-      "text": "No hero may start a battle with the Beast this round."
+      "name": {
+        "en": "Terror",
+        "sk": "Hrôza"
+      },
+      "text": {
+        "en": "No hero may start a battle with the Beast this round.",
+        "sk": "Toto kolo nesmie žiadny hrdina začať súboj s Beštiou."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Broken Blades",
-      "text": "Every hero puts a used-equipment marker on their weapon. It cannot be used this round."
+      "name": {
+        "en": "Broken Blades",
+        "sk": "Zlomené čepele"
+      },
+      "text": {
+        "en": "Every hero puts a used-equipment marker on their weapon. It cannot be used this round.",
+        "sk": "Každý hrdina položí žetón použitej výbavy na svoju zbraň. Toto kolo sa nedá použiť."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Kurodar Watches",
-      "text": "This round no hero may use helmet effects."
+      "name": {
+        "en": "Kurodar Watches",
+        "sk": "Kurodar sa díva"
+      },
+      "text": {
+        "en": "This round no hero may use helmet effects.",
+        "sk": "Toto kolo nesmie žiadny hrdina používať účinky prilby."
+      }
     },
     {
       "tier": "harsh",
-      "name": "Gathering Storm",
-      "text": "Place a small monster on the tile the Beast started from. If the Beast has moved on, place it three tiles from the castle."
+      "name": {
+        "en": "Gathering Storm",
+        "sk": "Blížiaca sa búrka"
+      },
+      "text": {
+        "en": "Place a small monster on the tile the Beast started from. If the Beast has moved on, place it three tiles from the castle.",
+        "sk": "Položte malú príšeru na políčko, z ktorého Beštia vyšla. Ak sa už Beštia pohla ďalej, položte ju tri políčka od hradu."
+      }
     },
     {
       "tier": "neutral",
-      "name": "Word from the Walls",
-      "text": "The guards shout news from the battlements. Every hero may reroll one die once this round."
+      "name": {
+        "en": "Word from the Walls",
+        "sk": "Správy z hradieb"
+      },
+      "text": {
+        "en": "The guards shout news from the battlements. Every hero may reroll one die once this round.",
+        "sk": "Stráže kričia novinky z cimburia. Každý hrdina si smie toto kolo raz prehodiť jednu kocku."
+      }
     },
     {
       "tier": "boon",
-      "name": "Dwarven Volley",
-      "text": "Every ballista fires twice this round.",
+      "name": {
+        "en": "Dwarven Volley",
+        "sk": "Trpasličia salva"
+      },
+      "text": {
+        "en": "Every ballista fires twice this round.",
+        "sk": "Každá balista toto kolo strieľa dvakrát."
+      },
       "toolkit": true
     },
     {
       "tier": "mild",
-      "name": "Jammed Winches",
-      "text": "This round each ballista fires only if the hero who bought it pays 1 coin.",
+      "name": {
+        "en": "Jammed Winches",
+        "sk": "Zaseknuté kladky"
+      },
+      "text": {
+        "en": "This round each ballista fires only if the hero who bought it pays 1 coin.",
+        "sk": "Toto kolo strieľa balista, len ak hrdina, ktorý ju kúpil, zaplatí 1 mincu."
+      },
       "toolkit": true
     },
     {
       "tier": "harsh",
-      "name": "Sabotage",
-      "text": "Remove one ballista from the board and put it back in the box.",
+      "name": {
+        "en": "Sabotage",
+        "sk": "Sabotáž"
+      },
+      "text": {
+        "en": "Remove one ballista from the board and put it back in the box.",
+        "sk": "Odstráňte jednu balistu z plánu a vráťte ju do škatule."
+      },
       "toolkit": true
     },
     {
       "tier": "harsh",
-      "name": "Three Daughters Ride",
-      "text": "Every hero takes 1 damage that cannot be blocked, and no hero may rest this round.",
+      "name": {
+        "en": "Three Daughters Ride",
+        "sk": "Tri dcéry vyrážajú"
+      },
+      "text": {
+        "en": "Every hero takes 1 damage that cannot be blocked, and no hero may rest this round.",
+        "sk": "Každý hrdina utrpí 1 zranenie, ktoré sa nedá zablokovať, a toto kolo nesmie nikto oddychovať."
+      },
       "toolkit": true
     }
   ],
   "powers": [
     {
-      "name": "Storm Finger",
-      "text": "Point at any monster anywhere on the board. Roll 2 green dice: each attack symbol puts 1 damage marker on it. If that finishes it off, take the reward on its token."
+      "name": {
+        "en": "Storm Finger",
+        "sk": "Búrkový prst"
+      },
+      "text": {
+        "en": "Point at any monster anywhere on the board. Roll 2 green dice: each attack symbol puts 1 damage marker on it. If that finishes it off, take the reward on its token.",
+        "sk": "Ukáž na ľubovoľnú príšeru kdekoľvek na pláne. Hoď 2 zelenými kockami: každý symbol útoku na ňu položí 1 žetón zranenia. Ak ju to dorazí, vezmi si odmenu z jej žetónu."
+      }
     },
     {
-      "name": "Moon Step",
-      "text": "Move your hero to any face-up tile. This is not an action."
+      "name": {
+        "en": "Moon Step",
+        "sk": "Mesačný krok"
+      },
+      "text": {
+        "en": "Move your hero to any face-up tile. This is not an action.",
+        "sk": "Presuň svojho hrdinu na ľubovoľné odkryté políčko. Nepočíta sa to ako akcia."
+      }
     },
     {
-      "name": "Silver Ward",
-      "text": "In one clash, ignore every monster die. Say it before the dice are rolled."
+      "name": {
+        "en": "Silver Ward",
+        "sk": "Strieborná ochrana"
+      },
+      "text": {
+        "en": "In one clash, ignore every monster die. Say it before the dice are rolled.",
+        "sk": "V jednom strete ignoruj všetky kocky príšery. Povedz to skôr, než sa hodia kocky."
+      }
     },
     {
-      "name": "Rallying Horn",
-      "text": "Every hero heals 2 toughness markers."
+      "name": {
+        "en": "Rallying Horn",
+        "sk": "Zvolávací roh"
+      },
+      "text": {
+        "en": "Every hero heals 2 toughness markers.",
+        "sk": "Každý hrdina si vylieči 2 žetóny odolnosti."
+      }
     },
     {
-      "name": "Forge Blessing",
-      "text": "Upgrade any one item on any hero, for free."
+      "name": {
+        "en": "Forge Blessing",
+        "sk": "Požehnanie vyhne"
+      },
+      "text": {
+        "en": "Upgrade any one item on any hero, for free.",
+        "sk": "Vylepši ľubovoľný predmet ľubovoľného hrdinu zadarmo."
+      }
     },
     {
-      "name": "Mason's Word",
-      "text": "Build one wall for free, even after the masons have left. Only if a wall marker is still in the box."
+      "name": {
+        "en": "Mason's Word",
+        "sk": "Murárske slovo"
+      },
+      "text": {
+        "en": "Build one wall for free, even after the masons have left. Only if a wall marker is still in the box.",
+        "sk": "Postav jednu hradbu zadarmo, aj keď murári už odišli. Len ak je v škatuli ešte žetón hradby."
+      }
     },
     {
-      "name": "Frostbind",
-      "text": "Choose one monster. It does not move at the end of this round. It works on the Beast too."
+      "name": {
+        "en": "Frostbind",
+        "sk": "Mrazivé puto"
+      },
+      "text": {
+        "en": "Choose one monster. It does not move at the end of this round. It works on the Beast too.",
+        "sk": "Vyber jednu príšeru. Na konci tohto kola sa nepohne. Funguje aj na Beštiu."
+      }
     },
     {
-      "name": "Second Wind",
-      "text": "Take one extra action this turn."
+      "name": {
+        "en": "Second Wind",
+        "sk": "Druhý nádych"
+      },
+      "text": {
+        "en": "Take one extra action this turn.",
+        "sk": "Tento ťah máš jednu akciu navyše."
+      }
     },
     {
-      "name": "Echo of Dergar",
-      "text": "In one clash, reroll all of your dice once."
+      "name": {
+        "en": "Echo of Dergar",
+        "sk": "Ozvena Dergara"
+      },
+      "text": {
+        "en": "In one clash, reroll all of your dice once.",
+        "sk": "V jednom strete si raz prehoď všetky svoje kocky."
+      }
     },
     {
-      "name": "Jewel Light",
-      "text": "Heal one hero to full toughness, wherever they stand."
+      "name": {
+        "en": "Jewel Light",
+        "sk": "Svetlo klenotu"
+      },
+      "text": {
+        "en": "Heal one hero to full toughness, wherever they stand.",
+        "sk": "Vylieč jedného hrdinu na plnú odolnosť, nech stojí kdekoľvek."
+      }
     },
     {
-      "name": "Coin Charm",
-      "text": "Take 4 coins from the supply."
+      "name": {
+        "en": "Coin Charm",
+        "sk": "Mincové kúzlo"
+      },
+      "text": {
+        "en": "Take 4 coins from the supply.",
+        "sk": "Vezmi si 4 mince zo zásoby."
+      }
     },
     {
-      "name": "Hunter's Mark",
-      "text": "For one whole battle, roll one extra orange die in every clash."
+      "name": {
+        "en": "Hunter's Mark",
+        "sk": "Lovcova značka"
+      },
+      "text": {
+        "en": "For one whole battle, roll one extra orange die in every clash.",
+        "sk": "Počas jedného celého súboja hádž v každom strete jednu oranžovú kocku navyše."
+      }
     },
     {
-      "name": "Dungeon Key",
-      "text": "Free any hero from the dungeon at once, without paying the 2 coin fee."
+      "name": {
+        "en": "Dungeon Key",
+        "sk": "Kľúč od žalára"
+      },
+      "text": {
+        "en": "Free any hero from the dungeon at once, without paying the 2 coin fee.",
+        "sk": "Okamžite vysloboď ľubovoľného hrdinu zo žalára bez poplatku 2 mincí."
+      }
     },
     {
-      "name": "Gale Step",
-      "text": "Push one monster one tile away from the castle."
+      "name": {
+        "en": "Gale Step",
+        "sk": "Krok víchrice"
+      },
+      "text": {
+        "en": "Push one monster one tile away from the castle.",
+        "sk": "Odtlač jednu príšeru o jedno políčko ďalej od hradu."
+      }
     },
     {
-      "name": "Dwarf's Favour",
-      "text": "Every ballista on the board fires once, right now. Toolkit only: if there are none, take 4 coins instead."
+      "name": {
+        "en": "Dwarf's Favour",
+        "sk": "Trpaslíkova priazeň"
+      },
+      "text": {
+        "en": "Every ballista on the board fires once, right now. Toolkit only: if there are none, take 4 coins instead.",
+        "sk": "Každá balista na pláne hneď raz vystrelí. Len s Toolkitom: ak žiadna nie je, vezmi si namiesto toho 4 mince."
+      }
     }
   ],
   "gifts": [
-    "2 extra coins",
-    "4 extra coins",
-    "Draw one item from the bag",
-    "Upgrade one item for free",
-    "Heal to full toughness",
-    "3 coins and heal 1",
-    "Draw an item and hand it to another hero",
-    "One free upgrade for any hero you choose"
+    {
+      "en": "2 extra coins",
+      "sk": "2 mince navyše"
+    },
+    {
+      "en": "4 extra coins",
+      "sk": "4 mince navyše"
+    },
+    {
+      "en": "Draw one item from the bag",
+      "sk": "Ťahaj jeden predmet z vrecka"
+    },
+    {
+      "en": "Upgrade one item for free",
+      "sk": "Vylepši jeden predmet zadarmo"
+    },
+    {
+      "en": "Heal to full toughness",
+      "sk": "Vylieč sa na plnú odolnosť"
+    },
+    {
+      "en": "3 coins and heal 1",
+      "sk": "3 mince a vylieč si 1"
+    },
+    {
+      "en": "Draw an item and hand it to another hero",
+      "sk": "Ťahaj predmet a podaj ho inému hrdinovi"
+    },
+    {
+      "en": "One free upgrade for any hero you choose",
+      "sk": "Jedno vylepšenie zadarmo pre hrdinu, ktorého vyberieš"
+    }
   ],
   "wonders": [
-    "Upgrade every item you are wearing",
-    "Point at any small monster on the board and remove it from the game",
-    "Roll 2 green dice and put a damage marker on any monster for each attack symbol, then draw an item",
-    "Every hero heals to full and takes 2 coins"
+    {
+      "en": "Upgrade every item you are wearing",
+      "sk": "Vylepši každý predmet, ktorý máš oblečený"
+    },
+    {
+      "en": "Point at any small monster on the board and remove it from the game",
+      "sk": "Ukáž na ľubovoľnú malú príšeru na pláne a odstráň ju z hry"
+    },
+    {
+      "en": "Roll 2 green dice and put a damage marker on any monster for each attack symbol, then draw an item",
+      "sk": "Hoď 2 zelenými kockami a za každý symbol útoku polož žetón zranenia na ľubovoľnú príšeru, potom ťahaj predmet"
+    },
+    {
+      "en": "Every hero heals to full and takes 2 coins",
+      "sk": "Každý hrdina sa vylieči naplno a vezme si 2 mince"
+    }
   ],
   "odds": {
     "gift": 22,
