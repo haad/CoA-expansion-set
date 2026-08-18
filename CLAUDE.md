@@ -79,9 +79,15 @@ falls back to 22/11/2, empty `gifts` makes gift rolls come out plain.
   re-unify the two tables.
 - **Quest extras** are rolled per offer: 65% plain, 22% gift, 11% power, 2% wonder. Verified at
   65.2 / 21.8 / 11.0 / 2.0 over 200k draws. Powers are not attached to specific quests.
-- **Heroes** are a roster of up to 4, each with a name, a dungeon flag, their own quests (cap 2) and
-  their own powers (one use each, `Cast and spend` removes it). Team quests are filtered out when
-  the roster has one hero.
+- **Heroes** are a roster of up to 4, each with a name, a portrait (`face`, index into the `FACES`
+  array of 8 hand-drawn SVG animal faces), a coat of arms (`arms`, index into `ARMS`, 8 shields),
+  a dungeon flag, their own quests (cap 2) and their own powers (one use each, `Cast and spend`
+  removes it). Adding a hero goes through a face picker; tapping a portrait or shield on the hero
+  card cycles to the next one. Team quests are filtered out when the roster has one hero.
+- **Roster persistence.** Hero names, faces and arms are saved to localStorage
+  (key `avel-nights-roster`) on every add, remove, rename and cycle, and restored on load. Quests,
+  powers, jail state and the round are deliberately session-only. All storage access is wrapped in
+  try/catch and degrades silently; corrupt or missing data falls back to the two default heroes.
 - **Quests expire** two rounds after being taken (`until = round + 2`), no penalty.
 - **Round counter** clears the current event and re-evaluates expiry.
 - **Toolkit toggle** filters `toolkit: true` cards out of all three decks and adds 3 to the default
@@ -206,8 +212,9 @@ only with the toolkit on; map geometry checks above. Also `node --check` the ext
 
 ## Open items and known weaknesses
 
-- **No persistence.** A reload loses the round number, hero names, quests and powers. Browser storage
-  was avoided so far. If added, it must degrade silently when unavailable.
+- **Partial persistence.** The roster (names, portraits, coats of arms) survives a reload via
+  localStorage; the round number, quests and powers still do not. If that ever gets extended, it
+  must keep degrading silently when storage is unavailable.
 - **Slovak translation.** The cards are all in `avel-cards.json`, so translating is editing one file.
   It is the largest remaining piece of real work and the code needs no changes.
 - **Map tile counts are derived, not counted.** 11/12/13/15 by player count came from reading the
