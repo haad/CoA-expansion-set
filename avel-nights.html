@@ -289,10 +289,10 @@
   <details id="help-en">
     <summary>How to use this at the table</summary>
     <ul>
-      <li><b>The tavern is the castle.</b> There is a tavern in the castle courtyard, so no extra tile is needed. A hero standing on the castle tile may ask the innkeeper for work.</li>
+      <li><b>The tavern is the castle.</b> There is a tavern in the castle courtyard, so no extra tile is needed. Word travels fast in Avel: a hero may send for work from anywhere on the board.</li>
       <li><b>Events.</b> Read the sky once at the start of each round, before the first hero acts. The first read is free; the team may pay 2 coins to the supply to read again, once per round. Effects that say "this round" end with the round.</li>
       <li><b>The dungeon.</b> Some events throw a hero in the castle dungeon. Move their pawn to the castle. They take no actions until another hero pays 2 coins to the supply, and that payment is free, not an action. If nobody can pay, the prisoner may spend a whole turn doing nothing to walk out. Tap the hero's Dungeon button to remember who is locked up.</li>
-      <li><b>Asking for a quest</b> costs one action and your hero must be on the castle tile. Each hero can carry two quests. Most quests pay only their own reward; the innkeeper sometimes throws in extra.</li>
+      <li><b>Asking for a quest</b> ends your turn and can be done from anywhere on the board. Each hero can carry two quests. Most quests pay only their own reward; the innkeeper sometimes throws in extra.</li>
       <li><b>Claiming a reward.</b> Because the tavern is now in the middle of everything, a finished quest is only paid out when that hero is back on the castle tile. Tap Done when they get there.</li>
       <li><b>Quests expire</b> two rounds after they are taken. Nothing bad happens.</li>
       <li><b>Invasions.</b> When a quest sends a monster to a workshop, draw a token from the matching stack and put it on that tile. While it sits there that tile action cannot be used. If the tile is not on the map yet, ask for another quest. No invasion ever puts a monster on the castle tile, since that would lose the game on the spot.</li>
@@ -306,10 +306,10 @@
   <details id="help-sk" hidden>
     <summary>Ako to používať pri hre</summary>
     <ul>
-      <li><b>Krčma je hrad.</b> Na hradnom nádvorí je krčma, takže netreba žiadne políčko navyše. Hrdina stojaci na hradnom políčku môže krčmára požiadať o prácu.</li>
+      <li><b>Krčma je hrad.</b> Na hradnom nádvorí je krčma, takže netreba žiadne políčko navyše. Chýry sa v Avele šíria rýchlo: hrdina si môže vypýtať prácu kdekoľvek na pláne.</li>
       <li><b>Udalosti.</b> Oblohu čítajte raz na začiatku každého kola, skôr než začne prvý hrdina. Prvé čítanie je zadarmo; družina môže zaplatiť 2 mince do zásoby a čítať znova, raz za kolo. Účinky, ktoré hovoria „toto kolo", končia s kolom.</li>
       <li><b>Žalár.</b> Niektoré udalosti hodia hrdinu do hradného žalára. Presuňte jeho figúrku na hrad. Nehrá, kým iný hrdina nezaplatí 2 mince do zásoby; tá platba je zadarmo, nie je to akcia. Ak nikto nemôže zaplatiť, väzeň môže stráviť celý ťah ničnerobením a vyjde von. Kto je zavretý, si zapamätáte hrdinovým tlačidlom Žalár.</li>
-      <li><b>Pýtanie si úlohy</b> stojí jednu akciu a hrdina musí stáť na hradnom políčku. Každý hrdina môže niesť dve úlohy. Väčšina úloh vypláca len svoju odmenu; krčmár občas pridá niečo navyše.</li>
+      <li><b>Pýtanie si úlohy</b> ukončí tvoj ťah a dá sa urobiť kdekoľvek na pláne. Každý hrdina môže niesť dve úlohy. Väčšina úloh vypláca len svoju odmenu; krčmár občas pridá niečo navyše.</li>
       <li><b>Vyzdvihnutie odmeny.</b> Keďže krčma je teraz uprostred všetkého, dokončená úloha sa vypláca, až keď je hrdina späť na hradnom políčku. Vtedy ťuknite na Hotovo.</li>
       <li><b>Úlohy vypršia</b> dve kolá po prijatí. Nič zlé sa nestane.</li>
       <li><b>Invázie.</b> Keď úloha pošle príšeru do dielne, ťahajte žetón z príslušného stohu a položte ho na to políčko. Kým tam sedí, akcia políčka sa nedá použiť. Ak políčko ešte nie je na mape, pýtajte si inú úlohu. Žiadna invázia nikdy nepoloží príšeru na hradné políčko, to by hru prehralo na mieste.</li>
@@ -385,7 +385,7 @@ const T={
   noLand:cd=>"No land of that size puts the crater "+cd+" tiles out. Change the tile count or the shape and try again.",
   mapNote:(n,s,cd)=>n+" tiles including the castle, "+s+" face up around it, crater "+cd+" tiles out. Small numbers are the distance from the castle.",
   skyIntro:"Start every round here, before the first hero acts: read the sky aloud and resolve it. The first read is free. If the team hates the omen, they may pay 2 coins to the supply to read again, once per round. Effects that say “this round” end with the round.",
-  tavernIntro:"Any hero standing on the castle tile may spend one action to ask for a quest. You don't finish it on the spot: carry it (each hero can hold two) and complete it within two rounds, even mid-turn. The reward is paid out when that hero is next back on the castle tile, and the innkeeper sometimes adds a little extra.",
+  tavernIntro:"Any hero may ask for a quest from anywhere on the board, but asking ends their turn. You don't finish it on the spot: carry it (each hero can hold two) and complete it within two rounds. The reward is paid out when that hero is next back on the castle tile, and the innkeeper sometimes adds a little extra.",
   beastIntro:"When the Black Moon rises and the Beast appears, the sky goes quiet: stop reading it and draw an omen here instead, once at the start of every round. This deck is meaner on purpose, even on Calm it leans dark, because the last march is meant to bite. Everything else about the round works as usual.",
   mapHint:"The generator lays out the shape of Avel, not which tile is which. Put the castle where it is marked, leave the marked starting slots face up, shuffle your remaining tiles face down into the empty slots, and stand the crater token on its slot. Crater distance follows the difficulty above: 4 tiles out on Calm, 3 on Restless, 2 on Cursed."},
  sk:{tiers:{boon:"Láskavosť",neutral:"Zvláštnosť",mild:"Ťažkosti",harsh:"Temnota"},
@@ -409,7 +409,7 @@ const T={
   noLand:cd=>"Žiadna krajina tejto veľkosti nedostane kráter "+cd+" políčok ďaleko. Zmeň počet políčok alebo tvar a skús znova.",
   mapNote:(n,s,cd)=>n+" políčok vrátane hradu, "+s+" odkrytých okolo neho, kráter "+cd+" políčok ďaleko. Malé čísla sú vzdialenosť od hradu.",
   skyIntro:"Každé kolo začnite tu, skôr než začne prvý hrdina: prečítajte oblohu nahlas a vykonajte ju. Prvé čítanie je zadarmo. Ak sa družine znamenie nepáči, môže zaplatiť 2 mince do zásoby a čítať znova, raz za kolo. Účinky „toto kolo“ končia s kolom.",
-  tavernIntro:"Hrdina stojaci na hradnom políčku môže minúť jednu akciu a vypýtať si úlohu. Nemusí ju splniť hneď: nesie ju so sebou (každý hrdina unesie dve) a dokončí ju do dvoch kôl, pokojne aj uprostred ťahu. Odmena sa vypláca, keď je ten hrdina nabudúce späť na hradnom políčku, a krčmár občas pridá niečo navyše.",
+  tavernIntro:"Hrdina si môže vypýtať úlohu kdekoľvek na pláne, pýtanie však ukončí jeho ťah. Nemusí ju splniť hneď: nesie ju so sebou (každý hrdina unesie dve) a dokončí ju do dvoch kôl. Odmena sa vypláca, keď je ten hrdina nabudúce späť na hradnom políčku, a krčmár občas pridá niečo navyše.",
   beastIntro:"Keď vyjde Čierny mesiac a objaví sa Beštia, obloha stíchne: prestaňte ju čítať a namiesto toho tu raz na začiatku každého kola ťahajte znamenie. Tento balíček je zámerne krutejší, aj na Pokojnej sa kloní k temnote, posledný pochod má hrýzť. Všetko ostatné v kole funguje ako zvyčajne.",
   mapHint:"Generátor určuje tvar krajiny Avel, nie ktoré políčko je ktoré. Hrad polož na označené miesto, označené štartovacie políčka nechaj odkryté, zvyšné políčka zamiešaj lícom nadol na prázdne miesta a na určené políčko postav žetón krátera. Vzdialenosť krátera sa riadi náročnosťou vyššie: 4 políčka na Pokojnej, 3 na Nepokojnej, 2 na Prekliatej."}
 };
