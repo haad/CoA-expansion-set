@@ -36,23 +36,12 @@
     {
       "tier": "boon",
       "name": {
-        "en": "Gaol Break",
-        "sk": "Útek zo žalára"
-      },
-      "text": {
-        "en": "Every hero in the dungeon walks free at once, no fee.",
-        "sk": "Každý hrdina v žalári je okamžite voľný, bez poplatku."
-      }
-    },
-    {
-      "tier": "boon",
-      "name": {
         "en": "Muster of Avel",
         "sk": "Zvolanie Avelu"
       },
       "text": {
-        "en": "Every hero rolls one green die and takes 2 coins for each attack symbol.",
-        "sk": "Každý hrdina hodí jednou zelenou kockou a vezme si 2 mince za každý symbol útoku."
+        "en": "Every hero rolls one green die and takes can do one more move if they get attack.",
+        "sk": "Každý hrdina hodí jednou zelenou kockou a može spravit jeden pohyb naviac ak hodit útok."
       }
     },
     {
@@ -95,8 +84,8 @@
         "sk": "Nabrúsené čepele"
       },
       "text": {
-        "en": "This round every hero rolls one extra green die in their first battle.",
-        "sk": "Toto kolo hádže každý hrdina vo svojom prvom súboji jednu zelenú kocku navyše."
+        "en": "This round every hero can rerolls a green die in their first battle.",
+        "sk": "Toto kolo hádže každý hrdina vo svojom prvom súboji znovu hodit zelenú kocku navyše."
       }
     },
     {
@@ -106,8 +95,8 @@
         "sk": "Druhý dych"
       },
       "text": {
-        "en": "One hero of your choice takes a third action this round.",
-        "sk": "Jeden hrdina podľa vášho výberu má toto kolo tretiu akciu."
+        "en": "If one hero will loose all points of toughness if will get one more additional point back.",
+        "sk": "Jeden hrdina ak pride o všetky body odolnosti dostane jednu späť."
       }
     },
     {
@@ -117,8 +106,8 @@
         "sk": "Trpasličia zľava"
       },
       "text": {
-        "en": "This round the first wall or moon seal costs 1 coin instead of 3.",
-        "sk": "Toto kolo stojí prvá hradba alebo mesačná pečať 1 mincu namiesto 3."
+        "en": "This round the upgrading your tools costs only 2 coins.",
+        "sk": "Toto kolo vylepšenie výbavy stoji len 2 mince."
       }
     },
     {
@@ -251,17 +240,6 @@
       "text": {
         "en": "One hero may put an item back in the bag and draw a new one.",
         "sk": "Jeden hrdina môže vrátiť predmet do vrecka a vytiahnuť si nový."
-      }
-    },
-    {
-      "tier": "neutral",
-      "name": {
-        "en": "Restless Beasts",
-        "sk": "Nepokojná zver"
-      },
-      "text": {
-        "en": "Move one small monster one tile in any direction.",
-        "sk": "Posuňte jednu malú príšeru o jedno políčko ľubovoľným smerom."
       }
     },
     {
@@ -647,8 +625,8 @@
         "sk": "Poraz 2 malé príšery."
       },
       "reward": {
-        "en": "4 coins",
-        "sk": "4 mince"
+        "en": "2 coins",
+        "sk": "2 mince"
       }
     },
     {
@@ -661,8 +639,8 @@
         "sk": "Poraz veľkú príšeru."
       },
       "reward": {
-        "en": "Draw an item, then upgrade one item",
-        "sk": "Ťahaj predmet a potom jeden predmet vylepši"
+        "en": "4 coins",
+        "sk": "4 mince"
       }
     },
     {
@@ -685,8 +663,8 @@
         "sk": "Kartograf"
       },
       "task": {
-        "en": "Reveal 2 new tiles.",
-        "sk": "Odkry 2 nové políčka."
+        "en": "Reveal 3 new tiles.",
+        "sk": "Odkry 3 nové políčka."
       },
       "reward": {
         "en": "3 coins",
@@ -703,8 +681,8 @@
         "sk": "Buď na konci kola hrdinom najďalej od hradu."
       },
       "reward": {
-        "en": "Draw an item",
-        "sk": "Ťahaj predmet"
+        "en": "1 coin",
+        "sk": "1 mince"
       }
     },
     {
@@ -717,8 +695,8 @@
         "sk": "Postav hradbu v kameňolome."
       },
       "reward": {
-        "en": "3 coins back",
-        "sk": "3 mince späť"
+        "en": "1 coin back",
+        "sk": "1 minca späť"
       }
     },
     {
@@ -728,11 +706,11 @@
       },
       "task": {
         "en": "Seal a lair at the stone circles.",
-        "sk": "Zapečať brloh pri kamenných kruhoch."
+        "sk": "Kúp pečať a použi ju na brloh príšery."
       },
       "reward": {
-        "en": "3 coins back",
-        "sk": "3 mince späť"
+        "en": "1 coins back",
+        "sk": "1 minca späť"
       }
     },
     {
@@ -742,7 +720,7 @@
       },
       "task": {
         "en": "Set a trap at the elven camp.",
-        "sk": "Polož pascu v elfskom tábore."
+        "sk": "Kup pascu v elfskom tábore."
       },
       "reward": {
         "en": "Upgrade one item",
@@ -759,8 +737,8 @@
         "sk": "Vylepši predmet v alchymistickej dielni."
       },
       "reward": {
-        "en": "2 coins and heal 2",
-        "sk": "2 mince a vylieč si 2"
+        "en": "1 coin and heal 2",
+        "sk": "1 minca a vylieč si 2"
       }
     },
     {
@@ -773,8 +751,8 @@
         "sk": "Prines obetu pri jazere želaní."
       },
       "reward": {
-        "en": "2 coins, whatever the dice say",
-        "sk": "2 mince, nech kocky povedia čokoľvek"
+        "en": "1 coin, whatever the dice say",
+        "sk": "1 minca, nech kocky povedia čokoľvek"
       }
     },
     {
@@ -783,8 +761,8 @@
         "sk": "Posol"
       },
       "task": {
-        "en": "Come back to the castle from at least two tiles away carrying 4 or more coins. You keep them.",
-        "sk": "Vráť sa na hrad aspoň z dvoch políčok diaľky so 4 alebo viac mincami. Ostanú ti."
+        "en": "Come back to the castle from at least two tiles away carrying 4 or more coins.",
+        "sk": "Vráť sa na hrad aspoň z dvoch políčok diaľky so 4 alebo viac mincami."
       },
       "reward": {
         "en": "Draw an item",
